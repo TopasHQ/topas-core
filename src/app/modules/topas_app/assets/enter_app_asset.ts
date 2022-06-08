@@ -1,10 +1,10 @@
-import { ApplyAssetContext, BaseAsset, codec } from 'lisk-sdk';
+import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
 import { TICKER } from '../../../constants';
 import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
 import { beddowsToLsk, createTopasAppEssentials, senderIsAppCreator, senderOwnsApp } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
-import { validateIsPublished, validateRegistration } from '../../../utils/validation';
+import { validateHexString, validateIsPublished, validateRegistration } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS } from '../constants';
 import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
 
@@ -28,6 +28,10 @@ export class EnterAppAsset extends BaseAsset {
 			},
 		},
 	};
+
+	public validate({ asset }: ValidateAssetContext<Props>): void {
+		validateHexString(asset.appId);
+	}
 
 	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasAppModuleAccountProps>(transaction.senderAddress);

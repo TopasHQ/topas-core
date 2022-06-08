@@ -4,7 +4,7 @@ import config from '../../../config';
 import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
 import { senderIsAppCreator, updateMeta } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
-import { validateEntranceFee, validateFee } from '../../../utils/validation';
+import { validateEntranceFee, validateHexString, validateTransactionFee } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES } from '../constants';
 import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
 
@@ -48,8 +48,9 @@ export class UpdateAppAsset extends BaseAsset {
 	};
 
 	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
-		validateFee(transaction, this.fee);
+		validateTransactionFee(transaction, this.fee);
 		validateEntranceFee(asset.entranceFee);
+		validateHexString(asset.id);
 	}
 
 	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<Props>): Promise<void> {

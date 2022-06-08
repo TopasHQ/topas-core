@@ -5,7 +5,7 @@ import { ModuleId, TopasApp, TopasAppModuleAccountProps, TopasAppModuleChainData
 import { bufferToHex, createMeta, createTopasAppEssentials, createUserEssentials } from '../../../utils/helpers';
 import { getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
-import { validateEntranceFee, validateFee } from '../../../utils/validation';
+import { validateEntranceFee, validateTransactionFee } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES } from '../constants';
 import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
 
@@ -56,7 +56,7 @@ export class CreateAppAsset extends BaseAsset {
 	};
 
 	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
-		validateFee(transaction, this.fee);
+		validateTransactionFee(transaction, this.fee);
 		validateEntranceFee(asset.entranceFee);
 	}
 
