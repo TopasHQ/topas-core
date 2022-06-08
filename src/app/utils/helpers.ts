@@ -2,15 +2,15 @@ import { Transaction, transactions } from 'lisk-sdk';
 import { DateTime } from 'luxon';
 
 import {
-	Highscore,
-	HighscoreEssentials,
-	LeaderboardModuleAccountProps,
-	Meta,
-	TopasAccountEssentials,
-	TopasApp,
-	TopasAppEssentials,
-	TopasAppModuleAccountProps,
-	TopasUser,
+    Highscore,
+    HighscoreEssentials,
+    LeaderboardModuleAccountProps,
+    Meta,
+    TopasAccountEssentials,
+    TopasApp,
+    TopasAppEssentials,
+    TopasAppModuleAccountProps,
+    TopasUser,
 } from '../types';
 
 export const createDateTime = () => {
@@ -56,3 +56,5 @@ export const senderIsAppCreator = (app: TopasApp, transaction: Transaction) =>
 
 export const senderOwnsApp = (app: TopasApp, account: TopasAppModuleAccountProps) =>
 	account.topasApp.appsPurchased.map(a => a.id).includes(app.data.id);
+
+export const bufferToHex = (input: Buffer) => input.toString('hex');

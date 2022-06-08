@@ -2,15 +2,14 @@ import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-
 
 import config from '../../../config';
 import { ModuleId, TopasApp, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
-import { createMeta, createTopasAppEssentials, createUserEssentials } from '../../../utils/helpers';
+import { bufferToHex, createMeta, createTopasAppEssentials, createUserEssentials } from '../../../utils/helpers';
 import { getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
-import { validateEntranceFee, validateFee, validateUuid } from '../../../utils/validation';
+import { validateEntranceFee, validateFee } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES } from '../constants';
 import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
 
 type Props = {
-	id: string;
 	type: number;
 	title: string;
 	description: string;
@@ -27,34 +26,30 @@ export class CreateAppAsset extends BaseAsset {
 		$id: 'topasApp/createApp-asset',
 		title: 'CreateAppAsset transaction asset for topasApp module',
 		type: 'object',
-		required: ['id', 'type', 'title', 'description', 'tipsEnabled', 'entranceFee'],
+		required: ['type', 'title', 'description', 'tipsEnabled', 'entranceFee'],
 		properties: {
-			id: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
 			type: {
 				dataType: 'uint32',
-				fieldNumber: 2,
+				fieldNumber: 1,
 			},
 			title: {
 				dataType: 'string',
-				fieldNumber: 3,
+				fieldNumber: 2,
 				minLength: config.appTitleMinLength,
 				maxLength: config.appTitleMaxLength,
 			},
 			description: {
 				dataType: 'string',
-				fieldNumber: 4,
+				fieldNumber: 3,
 				minLength: config.appDescriptionMinLength,
 				maxLength: config.appDescriptionMaxLength,
 			},
 			tipsEnabled: {
-				fieldNumber: 5,
+				fieldNumber: 4,
 				dataType: 'boolean',
 			},
 			entranceFee: {
-				fieldNumber: 6,
+				fieldNumber: 5,
 				dataType: 'uint64',
 			},
 		},
@@ -62,7 +57,6 @@ export class CreateAppAsset extends BaseAsset {
 
 	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
 		validateFee(transaction, this.fee);
-		validateUuid(asset.id);
 		validateEntranceFee(asset.entranceFee);
 	}
 
@@ -71,7 +65,7 @@ export class CreateAppAsset extends BaseAsset {
 		const topasUser = await getTopasUserData(reducerHandler, { address: account.address, errorOnEmpty: true });
 		const stateStoreData = await getStateStoreData<TopasAppModuleChainData>(stateStore, ModuleId.TopasApp);
 
-		const appExists = !!stateStoreData.apps.find(p => p.data.id === asset.id || p.data.title === asset.title);
+		const appExists = !!stateStoreData.apps.find(p => p.data.title === asset.title);
 		if (appExists) {
 			throw new Error(`App already exists.`);
 		}
@@ -80,6 +74,7 @@ export class CreateAppAsset extends BaseAsset {
 			meta: createMeta(),
 			data: {
 				...asset,
+				id: bufferToHex(transaction.id),
 				creator: createUserEssentials(account, topasUser),
 				isPublished: false,
 				numOfUses: 0,
