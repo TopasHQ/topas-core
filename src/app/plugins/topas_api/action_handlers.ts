@@ -1,12 +1,13 @@
 import { BaseChannel, cryptography } from 'lisk-sdk';
 
-import { Highscore, ModuleName, TopasApp } from '../../types';
+import { Highscore, ModuleName, Monster, TopasApp } from '../../types';
 import { isArrayOfStrings } from '../../utils/formats';
 import { buffersAreEqual } from '../../utils/helpers';
 
 const moduleActions = {
 	getApps: `${ModuleName.TopasApp}:getApps`,
 	getHighscores: `${ModuleName.Leaderboard}:getHighscores`,
+	getActiveMonsters: `${ModuleName.Monsters}:getActiveMonsters`,
 };
 
 export const getApps = async (channel: BaseChannel) => {
@@ -110,4 +111,10 @@ export const getHighscoresByUserAddress = async (channel: BaseChannel, params?: 
 	return highscores
 		.filter(score => buffersAreEqual(score.user.address, addressBuffer))
 		.map(score => ({ ...score, user: undefined }));
+};
+
+export const getActiveMonsters = async (channel: BaseChannel) => {
+	const apps = await channel.invoke<Monster[]>(moduleActions.getActiveMonsters);
+
+	return apps;
 };
