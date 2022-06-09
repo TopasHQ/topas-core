@@ -1,4 +1,4 @@
-import { ApplyAssetContext, BaseAsset, codec } from 'lisk-sdk';
+import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
 import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, ModuleId } from '../../../types';
 import {
@@ -9,7 +9,7 @@ import {
 } from '../../../utils/helpers';
 import { getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
-import { validateIsPublished } from '../../../utils/validation';
+import { validateHexString, validateIsPublished } from '../../../utils/validation';
 import { LEADERBOARD_ASSET_IDS } from '../constants';
 import { LEADERBOARD_KEY, leaderboardModuleSchema } from '../schemas';
 
@@ -22,7 +22,6 @@ export class PostScoreAsset extends BaseAsset {
 	public name = 'postScore';
 	public id = LEADERBOARD_ASSET_IDS.postScore;
 
-	// Define schema for asset
 	public schema = {
 		$id: 'leaderboard/postScore-asset',
 		title: 'PostScoreAsset transaction asset for leaderboard module',
@@ -39,6 +38,10 @@ export class PostScoreAsset extends BaseAsset {
 			},
 		},
 	};
+
+	public validate({ asset }: ValidateAssetContext<Props>): void {
+		validateHexString(asset.appId);
+	}
 
 	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<LeaderboardModuleAccountProps>(transaction.senderAddress);

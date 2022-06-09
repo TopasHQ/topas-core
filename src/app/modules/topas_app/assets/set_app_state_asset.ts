@@ -1,9 +1,10 @@
-import { ApplyAssetContext, BaseAsset, codec, cryptography } from 'lisk-sdk';
+import { ApplyAssetContext, BaseAsset, codec, cryptography, ValidateAssetContext } from 'lisk-sdk';
 
 import config from '../../../config';
 import { ModuleId, TopasAppModuleChainData } from '../../../types';
 import { updateMeta } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
+import { validateHexString } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS } from '../constants';
 import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
 
@@ -32,6 +33,10 @@ export class SetAppStateAsset extends BaseAsset {
 			},
 		},
 	};
+
+	public validate({ asset }: ValidateAssetContext<Props>): void {
+		validateHexString(asset.appId);
+	}
 
 	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<Props>): Promise<void> {
 		const stateStoreData = await getStateStoreData<TopasAppModuleChainData>(stateStore, ModuleId.TopasApp);

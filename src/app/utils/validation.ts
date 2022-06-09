@@ -1,4 +1,4 @@
-import { ReducerHandler, Transaction } from 'lisk-sdk';
+import { ReducerHandler, Transaction, validator } from 'lisk-sdk';
 import { validate as uuidValidate, version as uuidVersion } from 'uuid';
 
 import config from '../config';
@@ -13,7 +13,13 @@ export const validateUuid = (uuid: string) => {
 	}
 };
 
-export const validateFee = (transaction: Transaction, requiredFee?: bigint) => {
+export const validateHexString = (id: string) => {
+	if (!validator.isHexString(id)) {
+		throw new Error(`Invalid id, must be valid hex string.`);
+	}
+};
+
+export const validateTransactionFee = (transaction: Transaction, requiredFee?: bigint) => {
 	if (!requiredFee) {
 		return;
 	}
@@ -48,13 +54,6 @@ export const validateTipAmount = (tipAmount: bigint) => {
 export const validateIsPublished = (app: TopasApp) => {
 	if (!app.data.isPublished) {
 		throw new Error(`App is not published.`);
-	}
-};
-
-// Validate for uuid temporarily (use different ID mechanism later)
-export const validateAvatar = (avatar: string) => {
-	if (!uuidValidate(avatar) || uuidVersion(avatar) !== 4) {
-		throw new Error(`Invalid avatar, must be uuid v4.`);
 	}
 };
 

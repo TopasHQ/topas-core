@@ -4,7 +4,7 @@ import { TICKER } from '../../../constants';
 import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
 import { beddowsToLsk, senderIsAppCreator } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
-import { validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
+import { validateHexString, validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS } from '../constants';
 
 type Props = {
@@ -35,6 +35,7 @@ export class TipCreatorAsset extends BaseAsset {
 
 	public validate({ asset }: ValidateAssetContext<Props>): void {
 		validateTipAmount(asset.tipAmount);
+		validateHexString(asset.appId);
 	}
 
 	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {

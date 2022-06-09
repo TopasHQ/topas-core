@@ -3,7 +3,7 @@ import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 import config from '../../../config';
 import { MemberType, TopasUser, TopasUserModuleAccountProps } from '../../../types';
 import { createDateTime } from '../../../utils/helpers';
-import { validateAvatar, validateFee } from '../../../utils/validation';
+import { validateTransactionFee, validateUuid } from '../../../utils/validation';
 import { TOPAS_USER_ASSET_IDS, TOPAS_USER_FEES } from '../constants';
 
 type Props = {
@@ -36,8 +36,8 @@ export class RegisterAsset extends BaseAsset {
 	};
 
 	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
-		validateFee(transaction, this.fee);
-		validateAvatar(asset.avatar);
+		validateTransactionFee(transaction, this.fee);
+		validateUuid(asset.avatar);
 	}
 
 	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<Props>): Promise<void> {
