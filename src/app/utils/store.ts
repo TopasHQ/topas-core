@@ -1,6 +1,7 @@
 import { BaseModuleDataAccess, codec, Schema, StateStore } from 'lisk-sdk';
 
 import { LEADERBOARD_INIT, LEADERBOARD_KEY, leaderboardModuleSchema } from '../modules/leaderboard/schemas';
+import { MONSTERS_INIT, MONSTERS_KEY, monstersModuleSchema } from '../modules/monsters/schemas';
 import { TOPAS_APP_INIT, TOPAS_APP_KEY, topasAppModuleSchema } from '../modules/topas_app/schemas';
 import { ModuleId, TopasAppModuleChainData } from '../types';
 
@@ -15,6 +16,11 @@ const getModuleInfo = <T>(module: ModuleId) => {
 			key: LEADERBOARD_KEY,
 			init: LEADERBOARD_INIT,
 			schema: leaderboardModuleSchema,
+		},
+		[ModuleId.Monsters]: {
+			key: MONSTERS_KEY,
+			init: MONSTERS_INIT,
+			schema: monstersModuleSchema,
 		},
 	};
 

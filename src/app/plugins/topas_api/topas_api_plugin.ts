@@ -1,5 +1,6 @@
 import { BasePlugin, PluginInfo } from 'lisk-sdk';
 import type { BaseChannel, EventsDefinition, ActionsDefinition, SchemaWithDefault } from 'lisk-sdk';
+
 import * as actionHandlers from './action_handlers';
 
 /* eslint-disable  @typescript-eslint/no-empty-function */
@@ -45,6 +46,7 @@ export class TopasApiPlugin extends BasePlugin {
 			getHighscores: async () => actionHandlers.getHighscores(this._channel),
 			getHighscoresByAppId: async params => actionHandlers.getHighscoresByAppId(this._channel, params),
 			getHighscoresByUserAddress: async params => actionHandlers.getHighscoresByUserAddress(this._channel, params),
+			getActiveMonsters: async () => actionHandlers.getActiveMonsters(this._channel),
 		};
 	}
 
