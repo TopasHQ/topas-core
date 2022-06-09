@@ -2,7 +2,6 @@
 import { Account } from '@liskhq/lisk-chain';
 
 // INTERFACES & TYPES
-
 export interface DateTimeMetadata {
 	unix: number;
 	human: string;
@@ -69,6 +68,10 @@ export interface LeaderboardModuleChainData {
 	highscores: Highscore[];
 }
 
+export interface MonstersModuleChainData {
+	activeMonsters: Monster[];
+}
+
 export type TopasAppModuleAccountProps = Account & {
 	topasApp: {
 		appsCreated: TopasAppEssentials[];
@@ -93,8 +96,8 @@ export type TopasAccountProps = Account &
 
 // ENUMS
 export enum TopasAppType {
+	experience = 0,
 	game = 1,
-	experience = 2,
 }
 
 export enum MemberType {
@@ -108,10 +111,19 @@ export enum ModuleId {
 	TopasApp = 1000,
 	TopasUser = 1001,
 	Leaderboard = 1002,
+	Monsters = 1003,
 }
 
 export enum ModuleName {
 	TopasApp = 'topasApp',
 	TopasUser = 'topasUser',
 	Leaderboard = 'leaderboard',
+	Monsters = 'monsters',
 }
+
+export type Monster = {
+	id: string;
+	model: number;
+	location: number;
+	reward: bigint;
+};
