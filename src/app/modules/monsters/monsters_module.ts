@@ -15,8 +15,11 @@
  */
 import { AfterBlockApplyContext, AfterGenesisBlockApplyContext, BaseModule, codec } from 'lisk-sdk';
 
-import { ModuleId, ModuleName, MonstersModuleChainData } from '../../types';
-import { getDataAccessData } from '../../utils/store';
+import config from '../../config';
+import { ModuleId, ModuleName, Monster, MonstersModuleChainData } from '../../types';
+import { parseChainData } from '../../utils/formats';
+import { bufferToHex } from '../../utils/helpers';
+import { getDataAccessData, getStateStoreData } from '../../utils/store';
 import { DestroyMonsterAsset } from './assets/destroy_monster_asset';
 import { MONSTERS_INIT, MONSTERS_KEY, monstersModuleSchema } from './schemas';
 
@@ -26,17 +29,43 @@ export class MonstersModule extends BaseModule {
 
 	public transactionAssets = [new DestroyMonsterAsset()];
 
-	public events = [];
+	public events = ['monsterSpawned'];
 
 	public actions = {
-		getActiveMonsters: async () =>
-			(await getDataAccessData<MonstersModuleChainData>(this._dataAccess, ModuleId.Monsters)).activeMonsters,
+		getActiveMonsters: async () => {
+			const data = await getDataAccessData<MonstersModuleChainData>(this._dataAccess, ModuleId.Monsters);
+			return data.activeMonsters;
+		},
+		getActiveMonstersDev: async () => {
+			const data = await getDataAccessData<MonstersModuleChainData>(this._dataAccess, ModuleId.Monsters);
+			return parseChainData(data.activeMonsters);
+		},
 	};
 
 	public reducers = {};
 
-	public async afterBlockApply(_input: AfterBlockApplyContext) {
-		// wip
+	public async afterBlockApply({ stateStore, block }: AfterBlockApplyContext) {
+		if (block.header.height % config.monsterSpawnRate !== 0) {
+			this._logger.debug('Monster not spawned.');
+			return;
+		}
+
+		const stateStoreData = await getStateStoreData<MonstersModuleChainData>(stateStore, ModuleId.Monsters);
+
+		const id = bufferToHex(block.header.id);
+		const monster: Monster = {
+			id,
+			model: 1,
+			location: 1,
+			reward: BigInt('1'),
+		};
+
+		stateStoreData.activeMonsters.push(monster);
+
+		await stateStore.chain.set(MONSTERS_KEY, codec.encode(monstersModuleSchema, stateStoreData));
+
+		this._channel.publish('monsters:monsterSpawned', { id });
+		this._logger.info('Monster spawned!');
 	}
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
