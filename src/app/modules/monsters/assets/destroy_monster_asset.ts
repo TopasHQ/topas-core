@@ -10,22 +10,24 @@ type Props = {
 	id: string;
 };
 
+export const destroyMonsterAsset = {
+	$id: 'monsters/destroyMonster-asset',
+	title: 'DestroyMonsterAsset transaction asset for monsters module',
+	type: 'object',
+	required: ['id'],
+	properties: {
+		id: {
+			dataType: 'string',
+			fieldNumber: 1,
+		},
+	},
+};
+
 export class DestroyMonsterAsset extends BaseAsset {
 	public name = 'destroyMonster';
 	public id = MONSTERS_ASSET_IDS.destroyMonster;
 
-	public schema = {
-		$id: 'monsters/destroyMonster-asset',
-		title: 'DestroyMonsterAsset transaction asset for monsters module',
-		type: 'object',
-		required: ['id'],
-		properties: {
-			id: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-		},
-	};
+	public schema = destroyMonsterAsset;
 	public validate({ asset }: ValidateAssetContext<Props>): void {
 		validateHexString(asset.id);
 	}
