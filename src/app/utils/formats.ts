@@ -1,4 +1,4 @@
-export const parseChainData = <K>(data: K) => {
+export const serializeData = <K>(data: K) => {
 	const json: unknown = JSON.parse(
 		JSON.stringify(data, (_, value) => (typeof value === 'bigint' ? value.toString() : (value as unknown))),
 	);

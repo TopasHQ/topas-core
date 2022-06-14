@@ -1,7 +1,7 @@
 import { AfterGenesisBlockApplyContext, BaseModule, codec } from 'lisk-sdk';
 
 import { ModuleId, ModuleName, TopasApp, TopasAppModuleChainData } from '../../types';
-import { parseChainData } from '../../utils/formats';
+import { serializeData } from '../../utils/formats';
 import { getDataAccessData } from '../../utils/store';
 import { CreateAppAsset } from './assets/create_app_asset';
 import { EnterAppAsset } from './assets/enter_app_asset';
@@ -28,7 +28,7 @@ export class TopasAppModule extends BaseModule {
 	public actions = {
 		getApps: async (): Promise<unknown> => {
 			const data = await getDataAccessData<TopasAppModuleChainData>(this._dataAccess, ModuleId.TopasApp);
-			return parseChainData(data.apps);
+			return serializeData(data.apps);
 		},
 	};
 
