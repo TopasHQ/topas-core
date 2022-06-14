@@ -13,11 +13,12 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
-import { AfterBlockApplyContext, AfterGenesisBlockApplyContext, BaseModule, codec } from 'lisk-sdk';
+
+import { AfterBlockApplyContext, AfterGenesisBlockApplyContext, BaseModule, codec, TransactionApplyContext } from 'lisk-sdk';
 
 import config from '../../config';
 import { ModuleId, ModuleName, Monster, MonstersModuleChainData } from '../../types';
-import { parseChainData } from '../../utils/formats';
+import { serializeData } from '../../utils/formats';
 import {
     bufferToHex,
     chunkSubstr,
@@ -26,7 +27,8 @@ import {
     popFromArray,
 } from '../../utils/helpers';
 import { getDataAccessData, getStateStoreData } from '../../utils/store';
-import { DestroyMonsterAsset } from './assets/destroy_monster_asset';
+import { DestroyMonsterAsset, destroyMonsterAsset } from './assets/destroy_monster_asset';
+import { MONSTERS_ASSET_IDS } from './constants';
 import { MONSTERS_INIT, MONSTERS_KEY, monstersModuleSchema } from './schemas';
 
 export class MonstersModule extends BaseModule {
@@ -35,20 +37,30 @@ export class MonstersModule extends BaseModule {
 
 	public transactionAssets = [new DestroyMonsterAsset()];
 
-	public events = ['monsterSpawned'];
+	public events = ['monsterSpawned', 'monsterDestroyed'];
 
 	public actions = {
 		getActiveMonsters: async () => {
 			const data = await getDataAccessData<MonstersModuleChainData>(this._dataAccess, ModuleId.Monsters);
-			return data.activeMonsters;
+			return serializeData(data.activeMonsters);
 		},
 		getActiveMonstersDev: async () => {
 			const data = await getDataAccessData<MonstersModuleChainData>(this._dataAccess, ModuleId.Monsters);
-			return parseChainData(data.activeMonsters);
+			return serializeData(data.activeMonsters);
 		},
 	};
 
 	public reducers = {};
+
+	// eslint-disable-next-line @typescript-eslint/require-await
+	public async afterTransactionApply({ transaction }: TransactionApplyContext) {
+		if (transaction.moduleID === ModuleId.Monsters && transaction.assetID === MONSTERS_ASSET_IDS.destroyMonster) {
+			const monster = codec.decode<Monster>(destroyMonsterAsset, transaction.asset);
+
+			this._channel.publish('monsters:monsterDestroyed', { id: monster.id });
+			this._logger.info('Monster destroyed!');
+		}
+	}
 
 	public async afterBlockApply({ stateStore, block }: AfterBlockApplyContext) {
 		if (block.header.height % config.monsterSpawnRate !== 0) {
@@ -81,7 +93,7 @@ export class MonstersModule extends BaseModule {
 
 		await stateStore.chain.set(MONSTERS_KEY, codec.encode(monstersModuleSchema, stateStoreData));
 
-		this._channel.publish('monsters:monsterSpawned', { id });
+		this._channel.publish('monsters:monsterSpawned', { monster: serializeData(monster) });
 		this._logger.info('Monster spawned!');
 	}
 
