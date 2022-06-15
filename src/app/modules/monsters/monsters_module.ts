@@ -85,7 +85,7 @@ export class MonstersModule extends BaseModule {
 		const monster: Monster = {
 			id,
 			model: getPseudoRandomNumberInRange(0, config.monsterModels - 1, popFromArray(seeds)),
-			location: locationsAvailable[getPseudoRandomNumberInRange(0, locationsAvailable.length + 1, popFromArray(seeds))],
+			location: locationsAvailable[getPseudoRandomNumberInRange(0, locationsAvailable.length - 1, popFromArray(seeds))],
 			reward: getPseudoRandomBigIntInRange(config.monsterMinReward, config.monsterMaxReward, popFromArray(seeds)),
 		};
 
