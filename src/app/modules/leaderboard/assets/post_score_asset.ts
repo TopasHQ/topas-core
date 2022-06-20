@@ -10,13 +10,13 @@ import {
 import { getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateIsPublished } from '../../../utils/validation';
-import { LEADERBOARD_ASSET_IDS, LEADERBOARD_MODULE_KEY } from '../constants';
+import { LEADERBOARD_MODULE_KEY } from '../constants';
 import { leaderboardModuleSchema, postScoreAssetPropsSchema } from '../schemas';
 import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, PostScoreAssetProps } from '../types';
 
 export class PostScoreAsset extends BaseAsset {
 	public name = 'postScore';
-	public id = LEADERBOARD_ASSET_IDS.postScore;
+	public id = 1;
 	public schema = postScoreAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<PostScoreAssetProps>): void {

@@ -4,14 +4,14 @@ import { ModuleId } from '../../../types';
 import { senderIsAppCreator, updateMeta } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateEntranceFee, validateHexString, validateTransactionFee } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES, TOPAS_APP_MODULE_KEY } from '../constants';
+import { TOPAS_APP_MODULE_KEY } from '../constants';
 import { topasAppModuleSchema, updateAppAssetPropsSchema } from '../schemas';
 import { TopasAppModuleAccountProps, TopasAppModuleChainData, UpdateAppAssetProps } from '../types';
 
 export class UpdateAppAsset extends BaseAsset {
 	public name = 'updateApp';
-	public id = TOPAS_APP_ASSET_IDS.updateApp;
-	public fee = TOPAS_APP_FEES.updateApp;
+	public id = 2;
+	public fee = BigInt('500000000');
 	public schema = updateAppAssetPropsSchema;
 
 	public validate({ transaction, asset }: ValidateAssetContext<UpdateAppAssetProps>): void {

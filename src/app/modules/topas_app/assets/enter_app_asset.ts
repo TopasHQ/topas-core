@@ -5,13 +5,13 @@ import { ModuleId } from '../../../types';
 import { beddowsToLsk, createTopasAppEssentials, senderIsAppCreator, senderOwnsApp } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS, TOPAS_APP_MODULE_KEY } from '../constants';
+import { TOPAS_APP_MODULE_KEY } from '../constants';
 import { enterAppAssetPropsSchema, topasAppModuleSchema } from '../schemas';
 import { EnterAppAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class EnterAppAsset extends BaseAsset {
 	public name = 'enterApp';
-	public id = TOPAS_APP_ASSET_IDS.enterApp;
+	public id = 4;
 	public schema = enterAppAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<EnterAppAssetProps>): void {

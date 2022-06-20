@@ -2,14 +2,13 @@ import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 
 import { createDateTime } from '../../../utils/helpers';
 import { validateTransactionFee, validateUuid } from '../../../utils/validation';
-import { TOPAS_USER_ASSET_IDS, TOPAS_USER_FEES } from '../constants';
 import { registerAssetPropsSchema } from '../schemas';
 import { MemberType, RegisterAssetProps, TopasUser, TopasUserModuleAccountProps } from '../types';
 
 export class RegisterAsset extends BaseAsset {
 	public name = 'register';
-	public id = TOPAS_USER_ASSET_IDS.register;
-	public fee = TOPAS_USER_FEES.register;
+	public id = 1;
+	public fee = BigInt('1000000000');
 	public schema = registerAssetPropsSchema;
 
 	public validate({ transaction, asset }: ValidateAssetContext<RegisterAssetProps>): void {

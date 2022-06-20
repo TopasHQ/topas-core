@@ -3,7 +3,7 @@ import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-
 import { ModuleId } from '../../../types';
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateRegistration } from '../../../utils/validation';
-import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_KEY } from '../constants';
+import { MONSTERS_MODULE_KEY } from '../constants';
 import { destroyMonsterAssetPropsSchemas, monstersModuleSchema } from '../schemas';
 import { DestroyMonsterAssetProps, MonstersModuleChainData } from '../types';
 
@@ -11,7 +11,7 @@ export const destroyMonsterAsset = destroyMonsterAssetPropsSchemas;
 
 export class DestroyMonsterAsset extends BaseAsset {
 	public name = 'destroyMonster';
-	public id = MONSTERS_ASSET_IDS.destroyMonster;
+	public id = 1;
 	public schema = destroyMonsterAsset;
 
 	public validate({ asset }: ValidateAssetContext<DestroyMonsterAssetProps>): void {

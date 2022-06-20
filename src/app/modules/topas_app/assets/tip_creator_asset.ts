@@ -5,13 +5,12 @@ import { ModuleId } from '../../../types';
 import { beddowsToLsk, senderIsAppCreator } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS } from '../constants';
 import { tipCreatorAssetPropsSchema } from '../schemas';
 import { TipCreatorAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class TipCreatorAsset extends BaseAsset {
 	public name = 'tipCreator';
-	public id = TOPAS_APP_ASSET_IDS.tipCreator;
+	public id = 5;
 	public schema = tipCreatorAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<TipCreatorAssetProps>): void {

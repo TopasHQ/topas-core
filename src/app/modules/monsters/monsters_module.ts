@@ -12,7 +12,7 @@ import {
 } from '../../utils/helpers';
 import { getDataAccessData, getStateStoreData } from '../../utils/store';
 import { DestroyMonsterAsset, destroyMonsterAsset } from './assets/destroy_monster_asset';
-import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_INIT, MONSTERS_MODULE_KEY } from './constants';
+import { MONSTERS_MODULE_INIT, MONSTERS_MODULE_KEY } from './constants';
 import { monstersModuleSchema } from './schemas';
 import { Monster, MonstersModuleChainData } from './types';
 
@@ -39,7 +39,7 @@ export class MonstersModule extends BaseModule {
 
 	// eslint-disable-next-line @typescript-eslint/require-await
 	public async afterTransactionApply({ transaction }: TransactionApplyContext) {
-		if (transaction.moduleID === ModuleId.Monsters && transaction.assetID === MONSTERS_ASSET_IDS.destroyMonster) {
+		if (transaction.moduleID === ModuleId.Monsters && transaction.assetID === 1) {
 			const monster = codec.decode<Monster>(destroyMonsterAsset, transaction.asset);
 
 			this._channel.publish('monsters:monsterDestroyed', { id: monster.id });
