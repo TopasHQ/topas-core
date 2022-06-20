@@ -1,6 +1,7 @@
 import { ReducerHandler } from 'lisk-sdk';
 
-import { TopasApp, TopasUser } from '../types';
+import { TopasApp } from '../modules/topas_app/types';
+import { TopasUser } from '../modules/topas_user/types';
 
 // TYPED REDUCER HANDLER ABSTRACTIONS
 

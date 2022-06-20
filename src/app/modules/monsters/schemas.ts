@@ -1,13 +1,5 @@
 import { Schema } from 'lisk-sdk';
 
-import { Monster } from '../../types';
-
-export const MONSTERS_KEY = 'topas:monstersModuleData';
-
-export const MONSTERS_INIT = {
-	activeMonsters: [] as Monster[],
-};
-
 export const monsterSchema: Schema = {
 	$id: '/monsters/monster',
 	type: 'object',
@@ -29,6 +21,19 @@ export const monstersModuleSchema: Schema = {
 			fieldNumber: 1,
 			type: 'array',
 			items: monsterSchema,
+		},
+	},
+};
+
+export const destroyMonsterAssetPropsSchemas = {
+	$id: 'monsters/destroyMonster-asset',
+	title: 'DestroyMonsterAsset transaction asset for monsters module',
+	type: 'object',
+	required: ['id'],
+	properties: {
+		id: {
+			dataType: 'string',
+			fieldNumber: 1,
 		},
 	},
 };

@@ -1,24 +1,10 @@
-/*
- * LiskHQ/lisk-commander
- * Copyright © 2021 Lisk Foundation
- *
- * See the LICENSE file at the top-level directory of this distribution
- * for licensing information.
- *
- * Unless otherwise agreed in a custom licensing agreement with the Lisk Foundation,
- * no part of this software, including this file, may be copied, modified,
- * propagated, or distributed except according to the terms contained in the
- * LICENSE file.
- *
- * Removal or modification of this copyright notice is prohibited.
- *
- */
 import { BaseModule, StateStore } from 'lisk-sdk';
 
-import { ModuleId, ModuleName, TopasUser, TopasUserModuleAccountProps } from '../../types';
+import { ModuleId, ModuleName } from '../../types';
 import { RegisterAsset } from './assets/register_asset';
 import { UpdateAvatarAsset } from './assets/update_avatar_asset';
 import { topasUserAccountSchema } from './schemas';
+import { TopasUser, TopasUserModuleAccountProps } from './types';
 
 export class TopasUserModule extends BaseModule {
 	public name = ModuleName.TopasUser;

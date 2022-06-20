@@ -1,25 +1,29 @@
 import { BaseModuleDataAccess, codec, Schema, StateStore } from 'lisk-sdk';
 
-import { LEADERBOARD_INIT, LEADERBOARD_KEY, leaderboardModuleSchema } from '../modules/leaderboard/schemas';
-import { MONSTERS_INIT, MONSTERS_KEY, monstersModuleSchema } from '../modules/monsters/schemas';
-import { TOPAS_APP_INIT, TOPAS_APP_KEY, topasAppModuleSchema } from '../modules/topas_app/schemas';
-import { ModuleId, TopasAppModuleChainData } from '../types';
+import { LEADERBOARD_MODULE_INIT, LEADERBOARD_MODULE_KEY } from '../modules/leaderboard/constants';
+import { leaderboardModuleSchema } from '../modules/leaderboard/schemas';
+import { MONSTERS_MODULE_INIT, MONSTERS_MODULE_KEY } from '../modules/monsters/constants';
+import { monstersModuleSchema } from '../modules/monsters/schemas';
+import { TOPAS_APP_MODULE_INIT, TOPAS_APP_MODULE_KEY } from '../modules/topas_app/constants';
+import { topasAppModuleSchema } from '../modules/topas_app/schemas';
+import { TopasAppModuleChainData } from '../modules/topas_app/types';
+import { ModuleId } from '../types';
 
 const getModuleInfo = <T>(module: ModuleId) => {
 	const modules = {
 		[ModuleId.TopasApp]: {
-			key: TOPAS_APP_KEY,
-			init: TOPAS_APP_INIT,
+			key: TOPAS_APP_MODULE_KEY,
+			init: TOPAS_APP_MODULE_INIT,
 			schema: topasAppModuleSchema,
 		},
 		[ModuleId.Leaderboard]: {
-			key: LEADERBOARD_KEY,
-			init: LEADERBOARD_INIT,
+			key: LEADERBOARD_MODULE_KEY,
+			init: LEADERBOARD_MODULE_INIT,
 			schema: leaderboardModuleSchema,
 		},
 		[ModuleId.Monsters]: {
-			key: MONSTERS_KEY,
-			init: MONSTERS_INIT,
+			key: MONSTERS_MODULE_KEY,
+			init: MONSTERS_MODULE_INIT,
 			schema: monstersModuleSchema,
 		},
 	};

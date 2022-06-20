@@ -1,6 +1,9 @@
 import { BaseChannel, cryptography } from 'lisk-sdk';
 
-import { Highscore, ModuleName, Monster, TopasApp } from '../../types';
+import { Highscore } from '../../modules/leaderboard/types';
+import { Monster } from '../../modules/monsters/types';
+import { TopasApp } from '../../modules/topas_app/types';
+import { ModuleName } from '../../types';
 import { isArrayOfStrings } from '../../utils/formats';
 import { buffersAreEqual } from '../../utils/helpers';
 

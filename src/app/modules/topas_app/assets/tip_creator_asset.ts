@@ -1,44 +1,29 @@
 import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 
 import { TICKER } from '../../../constants';
-import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { beddowsToLsk, senderIsAppCreator } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS } from '../constants';
-
-type Props = {
-	appId: string;
-	tipAmount: bigint;
-};
+import { tipCreatorAssetPropsSchema } from '../schemas';
+import { TipCreatorAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class TipCreatorAsset extends BaseAsset {
 	public name = 'tipCreator';
-	public id = TOPAS_APP_ASSET_IDS.tipCreator;
+	public id = 5;
+	public schema = tipCreatorAssetPropsSchema;
 
-	public schema = {
-		$id: 'topasApp/tipCreator-asset',
-		title: 'TipCreatorAsset transaction asset for topasApp module',
-		type: 'object',
-		required: ['appId', 'tipAmount'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-			tipAmount: {
-				dataType: 'uint64',
-				fieldNumber: 2,
-			},
-		},
-	};
-
-	public validate({ asset }: ValidateAssetContext<Props>): void {
+	public validate({ asset }: ValidateAssetContext<TipCreatorAssetProps>): void {
 		validateTipAmount(asset.tipAmount);
 		validateHexString(asset.appId);
 	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<TipCreatorAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasAppModuleAccountProps>(transaction.senderAddress);
 		await validateRegistration(reducerHandler, account.address);
 

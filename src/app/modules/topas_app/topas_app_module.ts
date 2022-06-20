@@ -1,6 +1,6 @@
 import { AfterGenesisBlockApplyContext, BaseModule, codec } from 'lisk-sdk';
 
-import { ModuleId, ModuleName, TopasApp, TopasAppModuleChainData } from '../../types';
+import { ModuleId, ModuleName } from '../../types';
 import { serializeData } from '../../utils/formats';
 import { getDataAccessData } from '../../utils/store';
 import { CreateAppAsset } from './assets/create_app_asset';
@@ -8,7 +8,9 @@ import { EnterAppAsset } from './assets/enter_app_asset';
 import { SetAppStateAsset } from './assets/set_app_state_asset';
 import { TipCreatorAsset } from './assets/tip_creator_asset';
 import { UpdateAppAsset } from './assets/update_app_asset';
-import { TOPAS_APP_INIT, TOPAS_APP_KEY, topasAppAccountSchema, topasAppModuleSchema } from './schemas';
+import { TOPAS_APP_MODULE_INIT, TOPAS_APP_MODULE_KEY } from './constants';
+import { topasAppAccountSchema, topasAppModuleSchema } from './schemas';
+import { TopasApp, TopasAppModuleChainData } from './types';
 
 export class TopasAppModule extends BaseModule {
 	public name = ModuleName.TopasApp;
@@ -53,6 +55,6 @@ export class TopasAppModule extends BaseModule {
 	};
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
-		await _input.stateStore.chain.set(TOPAS_APP_KEY, codec.encode(topasAppModuleSchema, TOPAS_APP_INIT));
+		await _input.stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, TOPAS_APP_MODULE_INIT));
 	}
 }

@@ -1,38 +1,29 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
-import { ModuleId, MonstersModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateRegistration } from '../../../utils/validation';
-import { MONSTERS_ASSET_IDS } from '../constants';
-import { MONSTERS_KEY, monstersModuleSchema } from '../schemas';
+import { MONSTERS_MODULE_KEY } from '../constants';
+import { destroyMonsterAssetPropsSchemas, monstersModuleSchema } from '../schemas';
+import { DestroyMonsterAssetProps, MonstersModuleChainData } from '../types';
 
-type Props = {
-	id: string;
-};
-
-export const destroyMonsterAsset = {
-	$id: 'monsters/destroyMonster-asset',
-	title: 'DestroyMonsterAsset transaction asset for monsters module',
-	type: 'object',
-	required: ['id'],
-	properties: {
-		id: {
-			dataType: 'string',
-			fieldNumber: 1,
-		},
-	},
-};
+export const destroyMonsterAsset = destroyMonsterAssetPropsSchemas;
 
 export class DestroyMonsterAsset extends BaseAsset {
 	public name = 'destroyMonster';
-	public id = MONSTERS_ASSET_IDS.destroyMonster;
-
+	public id = 1;
 	public schema = destroyMonsterAsset;
-	public validate({ asset }: ValidateAssetContext<Props>): void {
+
+	public validate({ asset }: ValidateAssetContext<DestroyMonsterAssetProps>): void {
 		validateHexString(asset.id);
 	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<DestroyMonsterAssetProps>): Promise<void> {
 		await validateRegistration(reducerHandler, transaction.senderAddress);
 		const stateStoreData = await getStateStoreData<MonstersModuleChainData>(stateStore, ModuleId.Monsters);
 
@@ -49,6 +40,6 @@ export class DestroyMonsterAsset extends BaseAsset {
 			amount: monster.reward,
 		});
 
-		await stateStore.chain.set(MONSTERS_KEY, codec.encode(monstersModuleSchema, stateStoreData));
+		await stateStore.chain.set(MONSTERS_MODULE_KEY, codec.encode(monstersModuleSchema, stateStoreData));
 	}
 }

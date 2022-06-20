@@ -1,39 +1,29 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
 import { TICKER } from '../../../constants';
-import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { beddowsToLsk, createTopasAppEssentials, senderIsAppCreator, senderOwnsApp } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS } from '../constants';
-import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
-
-type Props = {
-	appId: string;
-};
+import { TOPAS_APP_MODULE_KEY } from '../constants';
+import { enterAppAssetPropsSchema, topasAppModuleSchema } from '../schemas';
+import { EnterAppAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class EnterAppAsset extends BaseAsset {
 	public name = 'enterApp';
-	public id = TOPAS_APP_ASSET_IDS.enterApp;
+	public id = 4;
+	public schema = enterAppAssetPropsSchema;
 
-	public schema = {
-		$id: 'topasApp/enterApp-asset',
-		title: 'EnterAppAsset transaction asset for topasApp module',
-		type: 'object',
-		required: ['appId'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-		},
-	};
-
-	public validate({ asset }: ValidateAssetContext<Props>): void {
+	public validate({ asset }: ValidateAssetContext<EnterAppAssetProps>): void {
 		validateHexString(asset.appId);
 	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<EnterAppAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasAppModuleAccountProps>(transaction.senderAddress);
 		await validateRegistration(reducerHandler, account.address);
 
@@ -73,7 +63,7 @@ export class EnterAppAsset extends BaseAsset {
 			account.topasApp.appsPurchased.push(createTopasAppEssentials(app));
 		}
 
-		await stateStore.chain.set(TOPAS_APP_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
+		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
 		await stateStore.account.set(account.address, account);
 	}
 }

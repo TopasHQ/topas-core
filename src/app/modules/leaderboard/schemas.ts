@@ -6,13 +6,6 @@ import {
     leaderboardEssentialsSchema,
     topasAppEssentialsSchema,
 } from '../../schemas';
-import { Highscore } from '../../types';
-
-export const LEADERBOARD_KEY = 'topas:leaderboardModuleData';
-
-export const LEADERBOARD_INIT = {
-	highscores: [] as Highscore[],
-};
 
 export const highscoreSchema: Schema = {
 	$id: '/leaderboard/highscore',
@@ -64,5 +57,22 @@ export const leaderboardAccountSchema = {
 	},
 	default: {
 		highscores: [],
+	},
+};
+
+export const postScoreAssetPropsSchema = {
+	$id: 'leaderboard/postScore-asset',
+	title: 'PostScoreAsset transaction asset for leaderboard module',
+	type: 'object',
+	required: ['appId', 'score'],
+	properties: {
+		appId: {
+			dataType: 'string',
+			fieldNumber: 1,
+		},
+		score: {
+			dataType: 'uint32',
+			fieldNumber: 2,
+		},
 	},
 };
