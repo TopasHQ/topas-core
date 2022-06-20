@@ -6,11 +6,7 @@ import { beddowsToLsk, senderIsAppCreator } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS } from '../constants';
-
-type Props = {
-	appId: string;
-	tipAmount: bigint;
-};
+import { TipCreatorAssetProps } from '../types';
 
 export class TipCreatorAsset extends BaseAsset {
 	public name = 'tipCreator';
@@ -33,12 +29,17 @@ export class TipCreatorAsset extends BaseAsset {
 		},
 	};
 
-	public validate({ asset }: ValidateAssetContext<Props>): void {
+	public validate({ asset }: ValidateAssetContext<TipCreatorAssetProps>): void {
 		validateTipAmount(asset.tipAmount);
 		validateHexString(asset.appId);
 	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<TipCreatorAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasAppModuleAccountProps>(transaction.senderAddress);
 		await validateRegistration(reducerHandler, account.address);
 

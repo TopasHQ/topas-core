@@ -3,12 +3,9 @@ import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-
 import { ModuleId, MonstersModuleChainData } from '../../../types';
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateRegistration } from '../../../utils/validation';
-import { MONSTERS_ASSET_IDS } from '../constants';
-import { MONSTERS_KEY, monstersModuleSchema } from '../schemas';
-
-type Props = {
-	id: string;
-};
+import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_KEY } from '../constants';
+import { monstersModuleSchema } from '../schemas';
+import { DestroyMonsterAssetProps } from '../types';
 
 export const destroyMonsterAsset = {
 	$id: 'monsters/destroyMonster-asset',
@@ -28,11 +25,16 @@ export class DestroyMonsterAsset extends BaseAsset {
 	public id = MONSTERS_ASSET_IDS.destroyMonster;
 
 	public schema = destroyMonsterAsset;
-	public validate({ asset }: ValidateAssetContext<Props>): void {
+	public validate({ asset }: ValidateAssetContext<DestroyMonsterAssetProps>): void {
 		validateHexString(asset.id);
 	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<DestroyMonsterAssetProps>): Promise<void> {
 		await validateRegistration(reducerHandler, transaction.senderAddress);
 		const stateStoreData = await getStateStoreData<MonstersModuleChainData>(stateStore, ModuleId.Monsters);
 
@@ -49,6 +51,6 @@ export class DestroyMonsterAsset extends BaseAsset {
 			amount: monster.reward,
 		});
 
-		await stateStore.chain.set(MONSTERS_KEY, codec.encode(monstersModuleSchema, stateStoreData));
+		await stateStore.chain.set(MONSTERS_MODULE_KEY, codec.encode(monstersModuleSchema, stateStoreData));
 	}
 }

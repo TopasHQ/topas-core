@@ -6,16 +6,9 @@ import { bufferToHex, createMeta, createTopasAppEssentials, createUserEssentials
 import { getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
 import { validateEntranceFee, validateTransactionFee } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES } from '../constants';
-import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
-
-type Props = {
-	type: number;
-	title: string;
-	description: string;
-	tipsEnabled: boolean;
-	entranceFee: bigint;
-};
+import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES, TOPAS_APP_MODULE_KEY } from '../constants';
+import { topasAppModuleSchema } from '../schemas';
+import { CreateAppAssetProps } from '../types';
 
 export class CreateAppAsset extends BaseAsset {
 	public name = 'createApp';
@@ -55,12 +48,17 @@ export class CreateAppAsset extends BaseAsset {
 		},
 	};
 
-	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
+	public validate({ transaction, asset }: ValidateAssetContext<CreateAppAssetProps>): void {
 		validateTransactionFee(transaction, this.fee);
 		validateEntranceFee(asset.entranceFee);
 	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<CreateAppAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasAppModuleAccountProps>(transaction.senderAddress);
 		const topasUser = await getTopasUserData(reducerHandler, { address: account.address, errorOnEmpty: true });
 		const stateStoreData = await getStateStoreData<TopasAppModuleChainData>(stateStore, ModuleId.TopasApp);
@@ -84,7 +82,7 @@ export class CreateAppAsset extends BaseAsset {
 		stateStoreData.apps.push(app);
 		account.topasApp.appsCreated.push(createTopasAppEssentials(app));
 
-		await stateStore.chain.set(TOPAS_APP_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
+		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
 		await stateStore.account.set(account.address, account);
 	}
 }

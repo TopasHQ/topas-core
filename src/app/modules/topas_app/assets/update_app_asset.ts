@@ -5,15 +5,9 @@ import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '.
 import { senderIsAppCreator, updateMeta } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateEntranceFee, validateHexString, validateTransactionFee } from '../../../utils/validation';
-import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES } from '../constants';
-import { TOPAS_APP_KEY, topasAppModuleSchema } from '../schemas';
-
-type Props = {
-	id: string;
-	description: string;
-	tipsEnabled: boolean;
-	entranceFee: bigint;
-};
+import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES, TOPAS_APP_MODULE_KEY } from '../constants';
+import { topasAppModuleSchema } from '../schemas';
+import { UpdateAppAssetProps } from '../types';
 
 export class UpdateAppAsset extends BaseAsset {
 	public name = 'updateApp';
@@ -47,13 +41,13 @@ export class UpdateAppAsset extends BaseAsset {
 		},
 	};
 
-	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
+	public validate({ transaction, asset }: ValidateAssetContext<UpdateAppAssetProps>): void {
 		validateTransactionFee(transaction, this.fee);
 		validateEntranceFee(asset.entranceFee);
 		validateHexString(asset.id);
 	}
 
-	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<UpdateAppAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasAppModuleAccountProps>(transaction.senderAddress);
 		const stateStoreData = await getStateStoreData<TopasAppModuleChainData>(stateStore, ModuleId.TopasApp);
 
@@ -70,7 +64,7 @@ export class UpdateAppAsset extends BaseAsset {
 			...asset,
 		};
 
-		await stateStore.chain.set(TOPAS_APP_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
+		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
 		await stateStore.account.set(account.address, account);
 	}
 }

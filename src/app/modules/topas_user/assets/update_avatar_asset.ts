@@ -3,10 +3,7 @@ import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 import { TopasUserModuleAccountProps } from '../../../types';
 import { validateTransactionFee, validateUuid } from '../../../utils/validation';
 import { TOPAS_USER_ASSET_IDS, TOPAS_USER_FEES } from '../constants';
-
-type Props = {
-	avatar: string;
-};
+import { UpdateAvatarAssetProps } from '../types';
 
 export class UpdateAvatarAsset extends BaseAsset {
 	public name = 'updateAvatar';
@@ -26,12 +23,12 @@ export class UpdateAvatarAsset extends BaseAsset {
 		},
 	};
 
-	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
+	public validate({ transaction, asset }: ValidateAssetContext<UpdateAvatarAssetProps>): void {
 		validateTransactionFee(transaction, this.fee);
 		validateUuid(asset.avatar);
 	}
 
-	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<UpdateAvatarAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasUserModuleAccountProps>(transaction.senderAddress);
 
 		if (account.topasUser.avatar === asset.avatar) {
