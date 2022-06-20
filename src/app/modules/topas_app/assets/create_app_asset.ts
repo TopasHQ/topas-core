@@ -1,52 +1,19 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
-import config from '../../../config';
 import { ModuleId } from '../../../types';
 import { bufferToHex, createMeta, createTopasAppEssentials, createUserEssentials } from '../../../utils/helpers';
 import { getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
 import { validateEntranceFee, validateTransactionFee } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES, TOPAS_APP_MODULE_KEY } from '../constants';
-import { topasAppModuleSchema } from '../schemas';
+import { createAppAssetPropsSchemas, topasAppModuleSchema } from '../schemas';
 import { CreateAppAssetProps, TopasApp, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class CreateAppAsset extends BaseAsset {
 	public name = 'createApp';
 	public id = TOPAS_APP_ASSET_IDS.createApp;
 	public fee = TOPAS_APP_FEES.createApp;
-
-	public schema = {
-		$id: 'topasApp/createApp-asset',
-		title: 'CreateAppAsset transaction asset for topasApp module',
-		type: 'object',
-		required: ['type', 'title', 'description', 'tipsEnabled', 'entranceFee'],
-		properties: {
-			type: {
-				dataType: 'uint32',
-				fieldNumber: 1,
-			},
-			title: {
-				dataType: 'string',
-				fieldNumber: 2,
-				minLength: config.appTitleMinLength,
-				maxLength: config.appTitleMaxLength,
-			},
-			description: {
-				dataType: 'string',
-				fieldNumber: 3,
-				minLength: config.appDescriptionMinLength,
-				maxLength: config.appDescriptionMaxLength,
-			},
-			tipsEnabled: {
-				fieldNumber: 4,
-				dataType: 'boolean',
-			},
-			entranceFee: {
-				fieldNumber: 5,
-				dataType: 'uint64',
-			},
-		},
-	};
+	public schema = createAppAssetPropsSchemas;
 
 	public validate({ transaction, asset }: ValidateAssetContext<CreateAppAssetProps>): void {
 		validateTransactionFee(transaction, this.fee);

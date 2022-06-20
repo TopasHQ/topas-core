@@ -11,29 +11,13 @@ import { getTopasAppById, getTopasUserData } from '../../../utils/reducer_handle
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateIsPublished } from '../../../utils/validation';
 import { LEADERBOARD_ASSET_IDS, LEADERBOARD_MODULE_KEY } from '../constants';
-import { leaderboardModuleSchema } from '../schemas';
+import { leaderboardModuleSchema, postScoreAssetPropsSchema } from '../schemas';
 import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, PostScoreAssetProps } from '../types';
 
 export class PostScoreAsset extends BaseAsset {
 	public name = 'postScore';
 	public id = LEADERBOARD_ASSET_IDS.postScore;
-
-	public schema = {
-		$id: 'leaderboard/postScore-asset',
-		title: 'PostScoreAsset transaction asset for leaderboard module',
-		type: 'object',
-		required: ['appId', 'score'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-			score: {
-				dataType: 'uint32',
-				fieldNumber: 2,
-			},
-		},
-	};
+	public schema = postScoreAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<PostScoreAssetProps>): void {
 		validateHexString(asset.appId);

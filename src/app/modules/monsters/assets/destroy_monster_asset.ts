@@ -4,27 +4,16 @@ import { ModuleId } from '../../../types';
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateRegistration } from '../../../utils/validation';
 import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_KEY } from '../constants';
-import { monstersModuleSchema } from '../schemas';
+import { destroyMonsterAssetPropsSchemas, monstersModuleSchema } from '../schemas';
 import { DestroyMonsterAssetProps, MonstersModuleChainData } from '../types';
 
-export const destroyMonsterAsset = {
-	$id: 'monsters/destroyMonster-asset',
-	title: 'DestroyMonsterAsset transaction asset for monsters module',
-	type: 'object',
-	required: ['id'],
-	properties: {
-		id: {
-			dataType: 'string',
-			fieldNumber: 1,
-		},
-	},
-};
+export const destroyMonsterAsset = destroyMonsterAssetPropsSchemas;
 
 export class DestroyMonsterAsset extends BaseAsset {
 	public name = 'destroyMonster';
 	public id = MONSTERS_ASSET_IDS.destroyMonster;
-
 	public schema = destroyMonsterAsset;
+
 	public validate({ asset }: ValidateAssetContext<DestroyMonsterAssetProps>): void {
 		validateHexString(asset.id);
 	}

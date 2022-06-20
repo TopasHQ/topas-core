@@ -24,3 +24,16 @@ export const monstersModuleSchema: Schema = {
 		},
 	},
 };
+
+export const destroyMonsterAssetPropsSchemas = {
+	$id: 'monsters/destroyMonster-asset',
+	title: 'DestroyMonsterAsset transaction asset for monsters module',
+	type: 'object',
+	required: ['id'],
+	properties: {
+		id: {
+			dataType: 'string',
+			fieldNumber: 1,
+		},
+	},
+};

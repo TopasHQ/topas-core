@@ -6,28 +6,13 @@ import { beddowsToLsk, senderIsAppCreator } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS } from '../constants';
+import { tipCreatorAssetPropsSchema } from '../schemas';
 import { TipCreatorAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class TipCreatorAsset extends BaseAsset {
 	public name = 'tipCreator';
 	public id = TOPAS_APP_ASSET_IDS.tipCreator;
-
-	public schema = {
-		$id: 'topasApp/tipCreator-asset',
-		title: 'TipCreatorAsset transaction asset for topasApp module',
-		type: 'object',
-		required: ['appId', 'tipAmount'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-			tipAmount: {
-				dataType: 'uint64',
-				fieldNumber: 2,
-			},
-		},
-	};
+	public schema = tipCreatorAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<TipCreatorAssetProps>): void {
 		validateTipAmount(asset.tipAmount);

@@ -6,25 +6,13 @@ import { beddowsToLsk, createTopasAppEssentials, senderIsAppCreator, senderOwnsA
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_MODULE_KEY } from '../constants';
-import { topasAppModuleSchema } from '../schemas';
+import { enterAppAssetPropsSchema, topasAppModuleSchema } from '../schemas';
 import { EnterAppAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class EnterAppAsset extends BaseAsset {
 	public name = 'enterApp';
 	public id = TOPAS_APP_ASSET_IDS.enterApp;
-
-	public schema = {
-		$id: 'topasApp/enterApp-asset',
-		title: 'EnterAppAsset transaction asset for topasApp module',
-		type: 'object',
-		required: ['appId'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-		},
-	};
+	public schema = enterAppAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<EnterAppAssetProps>): void {
 		validateHexString(asset.appId);

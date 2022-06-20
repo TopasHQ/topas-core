@@ -59,3 +59,20 @@ export const leaderboardAccountSchema = {
 		highscores: [],
 	},
 };
+
+export const postScoreAssetPropsSchema = {
+	$id: 'leaderboard/postScore-asset',
+	title: 'PostScoreAsset transaction asset for leaderboard module',
+	type: 'object',
+	required: ['appId', 'score'],
+	properties: {
+		appId: {
+			dataType: 'string',
+			fieldNumber: 1,
+		},
+		score: {
+			dataType: 'uint32',
+			fieldNumber: 2,
+		},
+	},
+};

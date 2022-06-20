@@ -6,29 +6,13 @@ import { updateMeta } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_MODULE_KEY } from '../constants';
-import { topasAppModuleSchema } from '../schemas';
+import { setAppStateAssetPropsSchema, topasAppModuleSchema } from '../schemas';
 import { SetAppStateAssetProps, TopasAppModuleChainData } from '../types';
 
 export class SetAppStateAsset extends BaseAsset {
 	public name = 'setAppState';
 	public id = TOPAS_APP_ASSET_IDS.setAppState;
-
-	public schema = {
-		$id: 'topasApp/setAppState-asset',
-		title: 'SetAppStateAsset transaction asset for topasApp module',
-		type: 'object',
-		required: ['appId', 'isPublished'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-			isPublished: {
-				fieldNumber: 2,
-				dataType: 'boolean',
-			},
-		},
-	};
+	public schema = setAppStateAssetPropsSchema;
 
 	public validate({ asset }: ValidateAssetContext<SetAppStateAssetProps>): void {
 		validateHexString(asset.appId);
