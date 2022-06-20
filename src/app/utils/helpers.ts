@@ -2,17 +2,10 @@ import { Transaction, transactions } from 'lisk-sdk';
 import { DateTime } from 'luxon';
 import * as seedrandom from 'seedrandom';
 
-import {
-    Highscore,
-    HighscoreEssentials,
-    LeaderboardModuleAccountProps,
-    Meta,
-    TopasAccountEssentials,
-    TopasApp,
-    TopasAppEssentials,
-    TopasAppModuleAccountProps,
-    TopasUser,
-} from '../types';
+import { Highscore, LeaderboardModuleAccountProps } from '../modules/leaderboard/types';
+import { TopasApp, TopasAppModuleAccountProps } from '../modules/topas_app/types';
+import { TopasUser } from '../modules/topas_user/types';
+import { HighscoreEssentials, Meta, TopasAccountEssentials, TopasAppEssentials } from '../types';
 
 export const createDateTime = () => {
 	const date = DateTime.now().toUTC();

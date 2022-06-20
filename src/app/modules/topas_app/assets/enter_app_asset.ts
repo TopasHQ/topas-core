@@ -1,13 +1,13 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
 import { TICKER } from '../../../constants';
-import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { beddowsToLsk, createTopasAppEssentials, senderIsAppCreator, senderOwnsApp } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_MODULE_KEY } from '../constants';
 import { topasAppModuleSchema } from '../schemas';
-import { EnterAppAssetProps } from '../types';
+import { EnterAppAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class EnterAppAsset extends BaseAsset {
 	public name = 'enterApp';

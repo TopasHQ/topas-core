@@ -1,11 +1,11 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
-import { ModuleId, MonstersModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateRegistration } from '../../../utils/validation';
 import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_KEY } from '../constants';
 import { monstersModuleSchema } from '../schemas';
-import { DestroyMonsterAssetProps } from '../types';
+import { DestroyMonsterAssetProps, MonstersModuleChainData } from '../types';
 
 export const destroyMonsterAsset = {
 	$id: 'monsters/destroyMonster-asset',

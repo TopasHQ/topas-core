@@ -1,12 +1,12 @@
 import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 
 import { TICKER } from '../../../constants';
-import { ModuleId, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { beddowsToLsk, senderIsAppCreator } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration, validateTipAmount } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS } from '../constants';
-import { TipCreatorAssetProps } from '../types';
+import { TipCreatorAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class TipCreatorAsset extends BaseAsset {
 	public name = 'tipCreator';

@@ -1,4 +1,4 @@
-import { TopasApp } from '../../types';
+import { TopasApp } from './types';
 
 export const TOPAS_APP_MODULE_KEY = 'topas:topasAppModuleData';
 

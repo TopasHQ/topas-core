@@ -1,4 +1,4 @@
-import { Highscore } from '../../types';
+import { Highscore } from './types';
 
 export const LEADERBOARD_MODULE_KEY = 'topas:leaderboardModuleData';
 

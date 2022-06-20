@@ -1,11 +1,10 @@
 import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 
 import config from '../../../config';
-import { MemberType, TopasUser, TopasUserModuleAccountProps } from '../../../types';
 import { createDateTime } from '../../../utils/helpers';
 import { validateTransactionFee, validateUuid } from '../../../utils/validation';
 import { TOPAS_USER_ASSET_IDS, TOPAS_USER_FEES } from '../constants';
-import { RegisterAssetProps } from '../types';
+import { MemberType, RegisterAssetProps, TopasUser, TopasUserModuleAccountProps } from '../types';
 
 export class RegisterAsset extends BaseAsset {
 	public name = 'register';

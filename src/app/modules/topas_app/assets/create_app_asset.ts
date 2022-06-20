@@ -1,14 +1,14 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
 import config from '../../../config';
-import { ModuleId, TopasApp, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { bufferToHex, createMeta, createTopasAppEssentials, createUserEssentials } from '../../../utils/helpers';
 import { getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
 import { validateEntranceFee, validateTransactionFee } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_FEES, TOPAS_APP_MODULE_KEY } from '../constants';
 import { topasAppModuleSchema } from '../schemas';
-import { CreateAppAssetProps } from '../types';
+import { CreateAppAssetProps, TopasApp, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class CreateAppAsset extends BaseAsset {
 	public name = 'createApp';

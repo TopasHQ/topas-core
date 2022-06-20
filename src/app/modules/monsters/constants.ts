@@ -1,4 +1,4 @@
-import { Monster } from '../../types';
+import { Monster } from './types';
 
 export const MONSTERS_MODULE_KEY = 'topas:monstersModuleData';
 

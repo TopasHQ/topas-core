@@ -1,9 +1,8 @@
 import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 
-import { TopasUserModuleAccountProps } from '../../../types';
 import { validateTransactionFee, validateUuid } from '../../../utils/validation';
 import { TOPAS_USER_ASSET_IDS, TOPAS_USER_FEES } from '../constants';
-import { UpdateAvatarAssetProps } from '../types';
+import { TopasUserModuleAccountProps, UpdateAvatarAssetProps } from '../types';
 
 export class UpdateAvatarAsset extends BaseAsset {
 	public name = 'updateAvatar';

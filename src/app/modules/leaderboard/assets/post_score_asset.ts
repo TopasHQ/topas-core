@@ -1,6 +1,6 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
-import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, ModuleId } from '../../../types';
+import { ModuleId } from '../../../types';
 import {
     createDateTime,
     createHighscoreEssentials,
@@ -12,7 +12,7 @@ import { getStateStoreData } from '../../../utils/store';
 import { validateHexString, validateIsPublished } from '../../../utils/validation';
 import { LEADERBOARD_ASSET_IDS, LEADERBOARD_MODULE_KEY } from '../constants';
 import { leaderboardModuleSchema } from '../schemas';
-import { PostScoreAssetProps } from '../types';
+import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, PostScoreAssetProps } from '../types';
 
 export class PostScoreAsset extends BaseAsset {
 	public name = 'postScore';

@@ -1,23 +1,7 @@
-/*
- * LiskHQ/lisk-commander
- * Copyright © 2021 Lisk Foundation
- *
- * See the LICENSE file at the top-level directory of this distribution
- * for licensing information.
- *
- * Unless otherwise agreed in a custom licensing agreement with the Lisk Foundation,
- * no part of this software, including this file, may be copied, modified,
- * propagated, or distributed except according to the terms contained in the
- * LICENSE file.
- *
- * Removal or modification of this copyright notice is prohibited.
- *
-*/
-
 import { AfterBlockApplyContext, AfterGenesisBlockApplyContext, BaseModule, codec, TransactionApplyContext } from 'lisk-sdk';
 
 import config from '../../config';
-import { ModuleId, ModuleName, Monster, MonstersModuleChainData } from '../../types';
+import { ModuleId, ModuleName } from '../../types';
 import { serializeData } from '../../utils/formats';
 import {
     bufferToHex,
@@ -30,7 +14,7 @@ import { getDataAccessData, getStateStoreData } from '../../utils/store';
 import { DestroyMonsterAsset, destroyMonsterAsset } from './assets/destroy_monster_asset';
 import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_INIT, MONSTERS_MODULE_KEY } from './constants';
 import { monstersModuleSchema } from './schemas';
-
+import { Monster, MonstersModuleChainData } from './types';
 
 export class MonstersModule extends BaseModule {
 	public name = ModuleName.Monsters;

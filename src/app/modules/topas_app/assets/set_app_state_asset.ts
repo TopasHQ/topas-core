@@ -1,13 +1,13 @@
 import { ApplyAssetContext, BaseAsset, codec, cryptography, ValidateAssetContext } from 'lisk-sdk';
 
 import config from '../../../config';
-import { ModuleId, TopasAppModuleChainData } from '../../../types';
+import { ModuleId } from '../../../types';
 import { updateMeta } from '../../../utils/helpers';
 import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString } from '../../../utils/validation';
 import { TOPAS_APP_ASSET_IDS, TOPAS_APP_MODULE_KEY } from '../constants';
 import { topasAppModuleSchema } from '../schemas';
-import { SetAppStateAssetProps } from '../types';
+import { SetAppStateAssetProps, TopasAppModuleChainData } from '../types';
 
 export class SetAppStateAsset extends BaseAsset {
 	public name = 'setAppState';
