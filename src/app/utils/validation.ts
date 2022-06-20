@@ -3,7 +3,7 @@ import { validate as uuidValidate, version as uuidVersion } from 'uuid';
 
 import config from '../config';
 import { TICKER } from '../constants';
-import { TopasApp } from '../types';
+import { TopasApp } from '../modules/topas_app/types';
 import { beddowsToLsk } from './helpers';
 import { getTopasUserData } from './reducer_handlers';
 
