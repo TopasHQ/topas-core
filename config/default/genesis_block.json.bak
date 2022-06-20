@@ -142,7 +142,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -184,7 +185,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -226,7 +228,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -268,7 +271,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -310,7 +314,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -352,7 +357,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -394,7 +400,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -436,7 +443,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -478,7 +486,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -520,7 +529,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -562,7 +572,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -604,7 +615,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -646,7 +658,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -688,7 +701,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -730,7 +744,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -772,7 +787,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -814,7 +830,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -856,7 +873,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -898,7 +916,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -940,7 +959,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -982,7 +1002,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1024,7 +1045,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1066,7 +1088,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1108,7 +1131,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1150,7 +1174,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1192,7 +1217,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1234,7 +1260,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1276,7 +1303,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1318,7 +1346,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1360,7 +1389,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1402,7 +1432,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1444,7 +1475,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1486,7 +1518,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1528,7 +1561,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1570,7 +1604,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1612,7 +1647,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1654,7 +1690,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1696,7 +1733,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1738,7 +1776,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1780,7 +1819,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1822,7 +1862,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1864,7 +1905,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1906,7 +1948,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1948,7 +1991,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -1990,7 +2034,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2032,7 +2077,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2074,7 +2120,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2116,7 +2163,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2158,7 +2206,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2200,7 +2249,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2242,7 +2292,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2284,7 +2335,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2326,7 +2378,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2368,7 +2421,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2410,7 +2464,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2452,7 +2507,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2494,7 +2550,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2536,7 +2593,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2578,7 +2636,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2620,7 +2679,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2662,7 +2722,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2704,7 +2765,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2746,7 +2808,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2788,7 +2851,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2830,7 +2894,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2872,7 +2937,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2914,7 +2980,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2956,7 +3023,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -2998,7 +3066,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3040,7 +3109,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3082,7 +3152,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3124,7 +3195,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3166,7 +3238,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3208,7 +3281,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3250,7 +3324,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3292,7 +3367,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3334,7 +3410,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3376,7 +3453,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3418,7 +3496,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3460,7 +3539,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3502,7 +3582,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3544,7 +3625,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3586,7 +3668,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3628,7 +3711,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3670,7 +3754,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3712,7 +3797,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3754,7 +3840,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3796,7 +3883,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3838,7 +3926,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3880,7 +3969,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3922,7 +4012,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -3964,7 +4055,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4006,7 +4098,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4048,7 +4141,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4090,7 +4184,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4132,7 +4227,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4174,7 +4270,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4216,7 +4313,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4258,7 +4356,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4300,7 +4399,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4342,7 +4442,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4384,7 +4485,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4426,7 +4528,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4468,7 +4571,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4510,7 +4614,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4552,7 +4657,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4594,7 +4700,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4636,7 +4743,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4678,7 +4786,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4720,7 +4829,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4762,7 +4872,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4804,7 +4915,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
@@ -4846,7 +4958,8 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchased": []
 					},
 					"topasUser": {
 						"username": "",
