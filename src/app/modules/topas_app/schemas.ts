@@ -1,13 +1,6 @@
 import { Schema } from 'lisk-sdk';
 
 import { accountEssentialsSchema, metaSchema, topasAppEssentialsSchema } from '../../schemas';
-import { TopasApp } from '../../types';
-
-export const TOPAS_APP_KEY = 'topas:topasAppModuleData';
-
-export const TOPAS_APP_INIT = {
-	apps: [] as TopasApp[],
-};
 
 export const topasAppSchema: Schema = {
 	$id: '/topasApp/app',

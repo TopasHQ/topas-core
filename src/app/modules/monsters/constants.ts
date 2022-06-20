@@ -1,3 +1,11 @@
+import { Monster } from '../../types';
+
+export const MONSTERS_MODULE_KEY = 'topas:monstersModuleData';
+
+export const MONSTERS_MODULE_INIT = {
+	activeMonsters: [] as Monster[],
+};
+
 export const MONSTERS_ASSET_IDS = {
 	destroyMonster: 1,
 };

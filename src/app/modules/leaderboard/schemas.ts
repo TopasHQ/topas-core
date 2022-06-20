@@ -6,13 +6,6 @@ import {
     leaderboardEssentialsSchema,
     topasAppEssentialsSchema,
 } from '../../schemas';
-import { Highscore } from '../../types';
-
-export const LEADERBOARD_KEY = 'topas:leaderboardModuleData';
-
-export const LEADERBOARD_INIT = {
-	highscores: [] as Highscore[],
-};
 
 export const highscoreSchema: Schema = {
 	$id: '/leaderboard/highscore',

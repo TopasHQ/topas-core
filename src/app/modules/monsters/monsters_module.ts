@@ -12,7 +12,7 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  *
- */
+*/
 
 import { AfterBlockApplyContext, AfterGenesisBlockApplyContext, BaseModule, codec, TransactionApplyContext } from 'lisk-sdk';
 
@@ -28,8 +28,9 @@ import {
 } from '../../utils/helpers';
 import { getDataAccessData, getStateStoreData } from '../../utils/store';
 import { DestroyMonsterAsset, destroyMonsterAsset } from './assets/destroy_monster_asset';
-import { MONSTERS_ASSET_IDS } from './constants';
-import { MONSTERS_INIT, MONSTERS_KEY, monstersModuleSchema } from './schemas';
+import { MONSTERS_ASSET_IDS, MONSTERS_MODULE_INIT, MONSTERS_MODULE_KEY } from './constants';
+import { monstersModuleSchema } from './schemas';
+
 
 export class MonstersModule extends BaseModule {
 	public name = ModuleName.Monsters;
@@ -91,13 +92,13 @@ export class MonstersModule extends BaseModule {
 
 		stateStoreData.activeMonsters.push(monster);
 
-		await stateStore.chain.set(MONSTERS_KEY, codec.encode(monstersModuleSchema, stateStoreData));
+		await stateStore.chain.set(MONSTERS_MODULE_KEY, codec.encode(monstersModuleSchema, stateStoreData));
 
 		this._channel.publish('monsters:monsterSpawned', { monster: serializeData(monster) });
 		this._logger.info('Monster spawned!');
 	}
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
-		await _input.stateStore.chain.set(MONSTERS_KEY, codec.encode(monstersModuleSchema, MONSTERS_INIT));
+		await _input.stateStore.chain.set(MONSTERS_MODULE_KEY, codec.encode(monstersModuleSchema, MONSTERS_MODULE_INIT));
 	}
 }

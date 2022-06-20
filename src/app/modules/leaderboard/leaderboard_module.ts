@@ -13,12 +13,14 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
+
 import { AfterGenesisBlockApplyContext, BaseModule, codec } from 'lisk-sdk';
 
 import { LeaderboardModuleChainData, ModuleId, ModuleName } from '../../types';
 import { getDataAccessData } from '../../utils/store';
 import { PostScoreAsset } from './assets/post_score_asset';
-import { LEADERBOARD_INIT, LEADERBOARD_KEY, leaderboardAccountSchema, leaderboardModuleSchema } from './schemas';
+import { LEADERBOARD_MODULE_INIT, LEADERBOARD_MODULE_KEY } from './constants';
+import { leaderboardAccountSchema, leaderboardModuleSchema } from './schemas';
 
 export class LeaderboardModule extends BaseModule {
 	public name = ModuleName.Leaderboard;
@@ -37,6 +39,9 @@ export class LeaderboardModule extends BaseModule {
 	public reducers = {};
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
-		await _input.stateStore.chain.set(LEADERBOARD_KEY, codec.encode(leaderboardModuleSchema, LEADERBOARD_INIT));
+		await _input.stateStore.chain.set(
+			LEADERBOARD_MODULE_KEY,
+			codec.encode(leaderboardModuleSchema, LEADERBOARD_MODULE_INIT),
+		);
 	}
 }

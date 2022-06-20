@@ -8,7 +8,8 @@ import { EnterAppAsset } from './assets/enter_app_asset';
 import { SetAppStateAsset } from './assets/set_app_state_asset';
 import { TipCreatorAsset } from './assets/tip_creator_asset';
 import { UpdateAppAsset } from './assets/update_app_asset';
-import { TOPAS_APP_INIT, TOPAS_APP_KEY, topasAppAccountSchema, topasAppModuleSchema } from './schemas';
+import { TOPAS_APP_MODULE_INIT, TOPAS_APP_MODULE_KEY } from './constants';
+import { topasAppAccountSchema, topasAppModuleSchema } from './schemas';
 
 export class TopasAppModule extends BaseModule {
 	public name = ModuleName.TopasApp;
@@ -53,6 +54,6 @@ export class TopasAppModule extends BaseModule {
 	};
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
-		await _input.stateStore.chain.set(TOPAS_APP_KEY, codec.encode(topasAppModuleSchema, TOPAS_APP_INIT));
+		await _input.stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, TOPAS_APP_MODULE_INIT));
 	}
 }
