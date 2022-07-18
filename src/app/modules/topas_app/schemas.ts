@@ -84,14 +84,14 @@ export const topasAppModuleSchema: Schema = {
 export const topasAppAccountSchema = {
 	$id: '/topasApp/accountSchema',
 	type: 'object',
-	required: ['appsCreated', 'appsPurchased'],
+	required: ['appsCreated', 'appsPurchases'],
 	properties: {
 		appsCreated: {
 			fieldNumber: 1,
 			type: 'array',
 			items: topasAppEssentialsSchema,
 		},
-		appsPurchased: {
+		appsPurchases: {
 			fieldNumber: 2,
 			type: 'array',
 			items: topasAppEssentialsSchema,
@@ -99,7 +99,7 @@ export const topasAppAccountSchema = {
 	},
 	default: {
 		appsCreated: [],
-		appsPurchased: [],
+		appsPurchases: [],
 	},
 };
 

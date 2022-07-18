@@ -60,7 +60,7 @@ export class EnterAppAsset extends BaseAsset {
 			});
 
 			app.data.numOfUses += 1;
-			account.topasApp.appsPurchased.push(createTopasAppEssentials(app));
+			account.topasApp.appsPurchases.push(createTopasAppEssentials(app));
 		}
 
 		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));

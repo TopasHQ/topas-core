@@ -7,7 +7,7 @@ export interface TopasAppModuleChainData {
 export type TopasAppModuleAccountProps = AccountDefaultProps & {
 	topasApp: {
 		appsCreated: TopasAppEssentials[];
-		appsPurchased: TopasAppEssentials[];
+		appsPurchases: TopasAppEssentials[];
 	};
 };
 
