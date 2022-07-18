@@ -1,4 +1,4 @@
-import { AccountDefaultProps, Meta, TopasAccountEssentials, TopasAppEssentials } from '../../types';
+import { AccountDefaultProps, Meta, TopasAccountEssentials, TopasAppEssentials, TopasAppPurchase } from '../../types';
 
 export interface TopasAppModuleChainData {
 	apps: TopasApp[];
@@ -7,7 +7,7 @@ export interface TopasAppModuleChainData {
 export type TopasAppModuleAccountProps = AccountDefaultProps & {
 	topasApp: {
 		appsCreated: TopasAppEssentials[];
-		appsPurchased: TopasAppEssentials[];
+		appsPurchases: TopasAppPurchase[];
 	};
 };
 

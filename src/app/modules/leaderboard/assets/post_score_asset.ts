@@ -47,7 +47,7 @@ export class PostScoreAsset extends BaseAsset {
 
 		// Check if user has already posted highscore for app
 		const moduleIndex = stateStoreData.highscores.findIndex(
-			score => score.user.username === topasUser.username && score.app.id === asset.appId,
+			score => score.user.username === topasUser.username && score.app.appId === asset.appId,
 		);
 
 		// If so, check if score is higher and update both module and account data

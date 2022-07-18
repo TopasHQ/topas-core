@@ -1,7 +1,7 @@
 import { Schema } from 'lisk-sdk';
 
 import config from '../../config';
-import { accountEssentialsSchema, metaSchema, topasAppEssentialsSchema } from '../../schemas';
+import { accountEssentialsSchema, metaSchema, topasAppEssentialsSchema, topasAppPurchaseSchema } from '../../schemas';
 
 export const topasAppSchema: Schema = {
 	$id: '/topasApp/app',
@@ -84,22 +84,22 @@ export const topasAppModuleSchema: Schema = {
 export const topasAppAccountSchema = {
 	$id: '/topasApp/accountSchema',
 	type: 'object',
-	required: ['appsCreated', 'appsPurchased'],
+	required: ['appsCreated', 'appsPurchases'],
 	properties: {
 		appsCreated: {
 			fieldNumber: 1,
 			type: 'array',
 			items: topasAppEssentialsSchema,
 		},
-		appsPurchased: {
+		appsPurchases: {
 			fieldNumber: 2,
 			type: 'array',
-			items: topasAppEssentialsSchema,
+			items: topasAppPurchaseSchema,
 		},
 	},
 	default: {
 		appsCreated: [],
-		appsPurchased: [],
+		appsPurchases: [],
 	},
 };
 
