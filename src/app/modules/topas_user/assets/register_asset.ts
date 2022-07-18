@@ -3,7 +3,7 @@ import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 import { createDateTime } from '../../../utils/helpers';
 import { validateTransactionFee, validateUuid } from '../../../utils/validation';
 import { registerAssetPropsSchema } from '../schemas';
-import { MemberType, RegisterAssetProps, TopasUser, TopasUserModuleAccountProps } from '../types';
+import { RegisterAssetProps, TopasUser, TopasUserModuleAccountProps } from '../types';
 
 export class RegisterAsset extends BaseAsset {
 	public name = 'register';
@@ -25,7 +25,6 @@ export class RegisterAsset extends BaseAsset {
 
 		const user: TopasUser = {
 			...asset,
-			memberType: MemberType.Registered,
 			memberSince: createDateTime(),
 		};
 
