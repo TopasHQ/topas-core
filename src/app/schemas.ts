@@ -48,9 +48,9 @@ export const accountEssentialsSchema = {
 
 export const topasAppEssentialsSchema = {
 	type: 'object',
-	required: ['id', 'title'],
+	required: ['appId', 'title'],
 	properties: {
-		id: {
+		appId: {
 			fieldNumber: 1,
 			dataType: 'string',
 		},

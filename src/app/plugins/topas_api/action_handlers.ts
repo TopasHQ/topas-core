@@ -77,10 +77,10 @@ export const getHighscores = async (channel: BaseChannel) => {
 	const highscores = await channel.invoke<Highscore[]>(moduleActions.getHighscores);
 
 	highscores.forEach(score => {
-		if (result[score.app.id]) {
-			result[score.app.id] = [...result[score.app.id], score];
+		if (result[score.app.appId]) {
+			result[score.app.appId] = [...result[score.app.appId], score];
 		} else {
-			result[score.app.id] = [score];
+			result[score.app.appId] = [score];
 		}
 	});
 
@@ -94,7 +94,7 @@ export const getHighscoresByAppId = async (channel: BaseChannel, params?: Record
 
 	const highscores = await channel.invoke<Highscore[]>(moduleActions.getHighscores);
 
-	return highscores.filter(score => score.app.id === params.id).map(score => ({ ...score, app: undefined }));
+	return highscores.filter(score => score.app.appId === params.id).map(score => ({ ...score, app: undefined }));
 };
 
 // TODO: support buffer address param
