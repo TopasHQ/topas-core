@@ -18,8 +18,12 @@ export interface TopasAccountEssentials {
 }
 
 export interface TopasAppEssentials {
-	id: string;
+	appId: string;
 	title: string;
+}
+
+export interface TopasAppPurchase extends TopasAppEssentials {
+	purchaseId: string;
 }
 
 export interface HighscoreEssentials {

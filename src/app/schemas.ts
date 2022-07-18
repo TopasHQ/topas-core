@@ -61,6 +61,25 @@ export const topasAppEssentialsSchema = {
 	},
 };
 
+export const topasAppPurchaseSchema = {
+	type: 'object',
+	required: ['appId', 'purchaseId', 'title'],
+	properties: {
+		appId: {
+			fieldNumber: 1,
+			dataType: 'string',
+		},
+		purchaseId: {
+			fieldNumber: 2,
+			dataType: 'string',
+		},
+		title: {
+			fieldNumber: 3,
+			dataType: 'string',
+		},
+	},
+};
+
 export const leaderboardEssentialsSchema = {
 	type: 'object',
 	required: ['appId', 'score'],

@@ -32,12 +32,12 @@ export const createUserEssentials = (
 ): TopasAccountEssentials => ({ username: topasUser.username, address: account.address });
 
 export const createTopasAppEssentials = (app: TopasApp): TopasAppEssentials => ({
-	id: app.data.id,
+	appId: app.data.id,
 	title: app.data.title,
 });
 
 export const createHighscoreEssentials = (highscore: Highscore): HighscoreEssentials => ({
-	appId: highscore.app.id,
+	appId: highscore.app.appId,
 	score: highscore.score,
 });
 
@@ -49,7 +49,7 @@ export const senderIsAppCreator = (app: TopasApp, transaction: Transaction) =>
 	buffersAreEqual(app.data.creator.address, transaction.senderAddress);
 
 export const senderOwnsApp = (app: TopasApp, account: TopasAppModuleAccountProps) =>
-	account.topasApp.appsPurchases.map(a => a.id).includes(app.data.id);
+	account.topasApp.appsPurchases.map(a => a.appId).includes(app.data.id);
 
 export const bufferToHex = (input: Buffer) => input.toString('hex');
 

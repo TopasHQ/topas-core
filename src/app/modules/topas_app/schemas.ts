@@ -1,7 +1,7 @@
 import { Schema } from 'lisk-sdk';
 
 import config from '../../config';
-import { accountEssentialsSchema, metaSchema, topasAppEssentialsSchema } from '../../schemas';
+import { accountEssentialsSchema, metaSchema, topasAppEssentialsSchema, topasAppPurchaseSchema } from '../../schemas';
 
 export const topasAppSchema: Schema = {
 	$id: '/topasApp/app',
@@ -94,7 +94,7 @@ export const topasAppAccountSchema = {
 		appsPurchases: {
 			fieldNumber: 2,
 			type: 'array',
-			items: topasAppEssentialsSchema,
+			items: topasAppPurchaseSchema,
 		},
 	},
 	default: {
