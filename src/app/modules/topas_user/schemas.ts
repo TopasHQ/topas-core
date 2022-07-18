@@ -4,7 +4,7 @@ import { dateTimeSchema } from '../../schemas';
 export const topasUserAccountSchema = {
 	$id: '/topasUser/accountSchema',
 	type: 'object',
-	required: ['username', 'avatar', 'memberType', 'memberSince'],
+	required: ['username', 'avatar', 'memberSince'],
 	properties: {
 		username: {
 			dataType: 'string',
@@ -14,19 +14,14 @@ export const topasUserAccountSchema = {
 			dataType: 'string',
 			fieldNumber: 2,
 		},
-		memberType: {
-			dataType: 'uint32',
-			fieldNumber: 3,
-		},
 		memberSince: {
-			fieldNumber: 4,
+			fieldNumber: 3,
 			...dateTimeSchema,
 		},
 	},
 	default: {
 		username: '',
 		avatar: '',
-		memberType: 0,
 		memberSince: {
 			human: '',
 			unix: 0,
