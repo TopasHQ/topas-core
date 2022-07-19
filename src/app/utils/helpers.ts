@@ -2,8 +2,9 @@ import { Transaction, transactions } from 'lisk-sdk';
 import { DateTime } from 'luxon';
 import * as seedrandom from 'seedrandom';
 
+import config from '../config';
 import { Highscore, LeaderboardModuleAccountProps } from '../modules/leaderboard/types';
-import { TopasApp, TopasAppModuleAccountProps } from '../modules/topas_app/types';
+import { TopasApp, TopasAppMode, TopasAppModuleAccountProps } from '../modules/topas_app/types';
 import { TopasUser } from '../modules/topas_user/types';
 import { HighscoreEssentials, Meta, TopasAccountEssentials, TopasAppEssentials } from '../types';
 
@@ -48,8 +49,23 @@ export const buffersAreEqual = (bufferA: Buffer, bufferB: Buffer) => Buffer.comp
 export const senderIsAppCreator = (app: TopasApp, transaction: Transaction) =>
 	buffersAreEqual(app.data.creator.address, transaction.senderAddress);
 
-export const senderOwnsApp = (app: TopasApp, account: TopasAppModuleAccountProps) =>
-	account.topasApp.appsPurchases.map(a => a.appId).includes(app.data.id);
+export const getDiffInMinutes = (dateA: DateTime, dateB = DateTime.now().toUTC()) =>
+	dateB.diff(dateA, 'minutes').minutes;
+
+export const senderOwnsValidPurchase = (app: TopasApp, account: TopasAppModuleAccountProps) => {
+	if (app.data.mode === TopasAppMode.feeToCreatorLifetime) {
+		return account.topasApp.appsPurchases.map(a => a.appId).includes(app.data.id);
+	}
+
+	return account.topasApp.appsPurchases
+		.filter(
+			p =>
+				p.appId === app.data.id &&
+				getDiffInMinutes(DateTime.fromSeconds(p.createdAt.unix)) < config.appPurchaseDuration,
+		)
+		.map(p => p.appId)
+		.includes(app.data.id);
+};
 
 export const bufferToHex = (input: Buffer) => input.toString('hex');
 

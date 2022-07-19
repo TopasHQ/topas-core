@@ -145,9 +145,9 @@ export const createAppAssetPropsSchemas = {
 	},
 };
 
-export const enterAppAssetPropsSchema = {
-	$id: 'topasApp/enterApp-asset',
-	title: 'EnterAppAsset transaction asset for topasApp module',
+export const purchaseAppEntranceAssetPropsSchema = {
+	$id: 'topasApp/purchaseAppEntrance-asset',
+	title: 'PurchaseAppEntrance transaction asset for topasApp module',
 	type: 'object',
 	required: ['appId'],
 	properties: {

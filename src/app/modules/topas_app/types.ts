@@ -47,7 +47,7 @@ export type CreateAppAssetProps = {
 	entranceFee: bigint;
 };
 
-export type EnterAppAssetProps = {
+export type PurchaseAppEntranceAssetProps = {
 	appId: string;
 };
 

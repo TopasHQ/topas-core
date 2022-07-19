@@ -63,7 +63,7 @@ export const topasAppEssentialsSchema = {
 
 export const topasAppPurchaseSchema = {
 	type: 'object',
-	required: ['appId', 'purchaseId', 'title'],
+	required: ['appId', 'purchaseId', 'title', 'createdAt'],
 	properties: {
 		appId: {
 			fieldNumber: 1,
@@ -76,6 +76,10 @@ export const topasAppPurchaseSchema = {
 		title: {
 			fieldNumber: 3,
 			dataType: 'string',
+		},
+		createdAt: {
+			fieldNumber: 4,
+			...dateTimeSchema,
 		},
 	},
 };
