@@ -19,6 +19,7 @@ export const topasAppSchema: Schema = {
 				'id',
 				'creator',
 				'type',
+				'mode',
 				'title',
 				'description',
 				'isPublished',
@@ -39,29 +40,33 @@ export const topasAppSchema: Schema = {
 					dataType: 'uint32',
 					fieldNumber: 3,
 				},
-				title: {
-					dataType: 'string',
+				mode: {
+					dataType: 'uint32',
 					fieldNumber: 4,
 				},
-				description: {
+				title: {
 					dataType: 'string',
 					fieldNumber: 5,
 				},
-				isPublished: {
-					dataType: 'boolean',
+				description: {
+					dataType: 'string',
 					fieldNumber: 6,
 				},
-				tipsEnabled: {
+				isPublished: {
 					dataType: 'boolean',
 					fieldNumber: 7,
 				},
+				tipsEnabled: {
+					dataType: 'boolean',
+					fieldNumber: 8,
+				},
 				entranceFee: {
 					dataType: 'uint64',
-					fieldNumber: 8,
+					fieldNumber: 9,
 				},
 				numOfUses: {
 					dataType: 'uint32',
-					fieldNumber: 9,
+					fieldNumber: 10,
 				},
 			},
 		},
@@ -107,30 +112,34 @@ export const createAppAssetPropsSchemas = {
 	$id: 'topasApp/createApp-asset',
 	title: 'CreateAppAsset transaction asset for topasApp module',
 	type: 'object',
-	required: ['type', 'title', 'description', 'tipsEnabled', 'entranceFee'],
+	required: ['type', 'mode', 'title', 'description', 'tipsEnabled', 'entranceFee'],
 	properties: {
 		type: {
 			dataType: 'uint32',
 			fieldNumber: 1,
 		},
+		mode: {
+			dataType: 'uint32',
+			fieldNumber: 2,
+		},
 		title: {
 			dataType: 'string',
-			fieldNumber: 2,
+			fieldNumber: 3,
 			minLength: config.appTitleMinLength,
 			maxLength: config.appTitleMaxLength,
 		},
 		description: {
 			dataType: 'string',
-			fieldNumber: 3,
+			fieldNumber: 4,
 			minLength: config.appDescriptionMinLength,
 			maxLength: config.appDescriptionMaxLength,
 		},
 		tipsEnabled: {
-			fieldNumber: 4,
+			fieldNumber: 5,
 			dataType: 'boolean',
 		},
 		entranceFee: {
-			fieldNumber: 5,
+			fieldNumber: 6,
 			dataType: 'uint64',
 		},
 	},

@@ -16,12 +16,19 @@ export enum TopasAppType {
 	game = 1,
 }
 
+export enum TopasAppMode {
+	feeToCreatorSingular = 0,
+	feeToCreatorLifetime = 1,
+	feeToChest = 2,
+}
+
 export interface TopasApp {
 	meta: Meta;
 	data: {
 		id: string;
 		creator: TopasAccountEssentials;
 		type: TopasAppType;
+		mode: TopasAppMode;
 		title: string;
 		description: string;
 		isPublished: boolean;
@@ -32,7 +39,8 @@ export interface TopasApp {
 }
 
 export type CreateAppAssetProps = {
-	type: number;
+	type: TopasAppType;
+	mode: TopasAppMode;
 	title: string;
 	description: string;
 	tipsEnabled: boolean;
