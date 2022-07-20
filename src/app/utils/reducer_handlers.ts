@@ -2,6 +2,7 @@ import { ReducerHandler } from 'lisk-sdk';
 
 import { TopasApp } from '../modules/topas_app/types';
 import { TopasUser } from '../modules/topas_user/types';
+import { TopasAppPurchase } from '../types';
 
 // TYPED REDUCER HANDLER ABSTRACTIONS
 
@@ -22,3 +23,6 @@ export const tokenCredit = async (
 
 export const getTopasAppById = async (reducerHandler: ReducerHandler, { id }: { id: string }) =>
 	reducerHandler.invoke<TopasApp>('topasApp:getAppById', { id });
+
+export const getAccountPurchases = async (reducerHandler: ReducerHandler, { address }: { address: Buffer }) =>
+	reducerHandler.invoke<TopasAppPurchase[]>('topasApp:getAccountPurchases', { address });

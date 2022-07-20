@@ -26,7 +26,7 @@ export const genesisApps: TopasApp[] = [
 			description: 'Blast gems in a shiny shooting range >_>',
 			isPublished: true,
 			tipsEnabled: true,
-			entranceFee: BigInt('15000000000'),
+			entranceFee: BigInt('2500000000'),
 			numOfUses: 0,
 		},
 	},
