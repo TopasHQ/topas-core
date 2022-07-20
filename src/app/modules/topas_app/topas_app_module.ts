@@ -1,6 +1,6 @@
 import { AfterGenesisBlockApplyContext, BaseModule, codec, cryptography } from 'lisk-sdk';
 
-import { ModuleId, ModuleName } from '../../types';
+import { ModuleId, ModuleName, TopasAppPurchase } from '../../types';
 import { serializeData } from '../../utils/formats';
 import { senderOwnsValidPurchase } from '../../utils/helpers';
 import { getDataAccessData } from '../../utils/store';
@@ -69,6 +69,17 @@ export class TopasAppModule extends BaseModule {
 			}
 
 			return app;
+		},
+		getAccountPurchases: async (params: Record<string, unknown>): Promise<TopasAppPurchase[]> => {
+			const { address } = params;
+
+			if (!Buffer.isBuffer(address)) {
+				throw new Error('Address must be a buffer');
+			}
+
+			const account = await this._dataAccess.getAccountByAddress<TopasAppModuleAccountProps>(address);
+
+			return account.topasApp.appsPurchases;
 		},
 	};
 

@@ -1,15 +1,16 @@
 import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
-import { ModuleId } from '../../../types';
+import { ModuleId, TopasAppPurchase } from '../../../types';
 import {
     createDateTime,
     createHighscoreEssentials,
     createTopasAppEssentials,
     createUserEssentials,
 } from '../../../utils/helpers';
-import { getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
+import { getAccountPurchases, getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
-import { validateHexString, validateIsPublished } from '../../../utils/validation';
+import { validateHexString, validateIsPublished, validatePurchaseDate } from '../../../utils/validation';
+import { TopasAppMode } from '../../topas_app/types';
 import { LEADERBOARD_MODULE_KEY } from '../constants';
 import { leaderboardModuleSchema, postScoreAssetPropsSchema } from '../schemas';
 import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, PostScoreAssetProps } from '../types';
@@ -33,6 +34,18 @@ export class PostScoreAsset extends BaseAsset {
 		const topasUser = await getTopasUserData(reducerHandler, { address: account.address, errorOnEmpty: true });
 		const topasApp = await getTopasAppById(reducerHandler, { id: asset.appId });
 		validateIsPublished(topasApp);
+
+		const appPurchases = (await getAccountPurchases(reducerHandler, { address: transaction.senderAddress })).filter(
+			p => p.appId === asset.appId && p.purchaseId === asset.purchaseId,
+		);
+
+		if (!appPurchases.length) {
+			throw new Error('Score invalid. No valid entrance purchase found.');
+		}
+
+		if ((topasApp.data.mode as number) !== TopasAppMode.feeToCreatorLifetime && appPurchases.length > 0) {
+			validatePurchaseDate(appPurchases.pop() as TopasAppPurchase);
+		}
 
 		const stateStoreData = await getStateStoreData<LeaderboardModuleChainData>(stateStore, ModuleId.Leaderboard);
 

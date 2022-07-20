@@ -64,7 +64,7 @@ export const postScoreAssetPropsSchema = {
 	$id: 'leaderboard/postScore-asset',
 	title: 'PostScoreAsset transaction asset for leaderboard module',
 	type: 'object',
-	required: ['appId', 'score'],
+	required: ['appId', 'score', 'purchaseId'],
 	properties: {
 		appId: {
 			dataType: 'string',
@@ -73,6 +73,10 @@ export const postScoreAssetPropsSchema = {
 		score: {
 			dataType: 'uint32',
 			fieldNumber: 2,
+		},
+		purchaseId: {
+			dataType: 'string',
+			fieldNumber: 3,
 		},
 	},
 };

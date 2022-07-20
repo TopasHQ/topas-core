@@ -26,4 +26,5 @@ export interface Highscore {
 export type PostScoreAssetProps = {
 	score: number;
 	appId: string;
+	purchaseId: string;
 };
