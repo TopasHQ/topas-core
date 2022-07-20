@@ -1,6 +1,6 @@
 import { cryptography } from 'lisk-sdk';
 
-import { TopasApp } from './types';
+import { TopasApp, TopasAppMode, TopasAppType } from './types';
 
 export const genesisApps: TopasApp[] = [
 	{
@@ -20,7 +20,8 @@ export const genesisApps: TopasApp[] = [
 				username: 'Maxima',
 				address: cryptography.hexToBuffer('686aedfb805bb407a3abbf7e95b9d5a4b88b8ffb'),
 			},
-			type: 1,
+			type: TopasAppType.game,
+			mode: TopasAppMode.feeToChest,
 			title: 'Octa Blaster',
 			description: 'Blast gems in a shiny shooting range >_>',
 			isPublished: true,
@@ -46,7 +47,8 @@ export const genesisApps: TopasApp[] = [
 				username: 'John',
 				address: cryptography.hexToBuffer('c9e602d023ad383f2ba0090cadad0983817f4fb7'),
 			},
-			type: 1,
+			mode: TopasAppMode.feeToCreatorSingular,
+			type: TopasAppType.game,
 			title: 'Example Game',
 			description: 'Description for first app, making it a bit longer to exceed 32 chars.',
 			isPublished: true,
@@ -72,7 +74,8 @@ export const genesisApps: TopasApp[] = [
 				username: 'Olivia',
 				address: cryptography.hexToBuffer('48f798ee1977b70c09c729238d482f195da3882a'),
 			},
-			type: 0,
+			mode: TopasAppMode.feeToCreatorLifetime,
+			type: TopasAppType.experience,
 			title: 'Moon Jump',
 			description: 'Have you ever wanted to fly on the moon with a jetpack? Now you can!',
 			isPublished: true,

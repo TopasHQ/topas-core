@@ -9,6 +9,7 @@ export default {
 	appTitleMaxLength: Number(process.env.APP_TITLE_MAX_LENGTH ?? '32'),
 	appDescriptionMinLength: Number(process.env.APP_DESCRIPTION_MIN_LENGTH ?? '32'),
 	appDescriptionMaxLength: Number(process.env.APP_DESCRIPTION_MAX_LENGTH ?? '800'),
+	appPurchaseDuration: Number(process.env.APP_PURCHASE_DURATION ?? '5'),
 	usernameMinLength: Number(process.env.USERNAME_MIN_LENGTH ?? '3'),
 	usernameMaxLength: Number(process.env.USERNAME_MAX_LENGTH ?? '16'),
 	adminAccounts: ['6bac0c7b36607b2cceed4071f435b1c1bec031a4', 'a3c40a2cdb1802ba7ab80fa43f15887536a6ccda'],

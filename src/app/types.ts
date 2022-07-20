@@ -24,6 +24,7 @@ export interface TopasAppEssentials {
 
 export interface TopasAppPurchase extends TopasAppEssentials {
 	purchaseId: string;
+	createdAt: DateTimeMetadata;
 }
 
 export interface HighscoreEssentials {
