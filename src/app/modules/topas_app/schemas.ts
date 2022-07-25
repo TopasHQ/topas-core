@@ -25,6 +25,7 @@ export const topasAppSchema: Schema = {
 				'isPublished',
 				'tipsEnabled',
 				'entranceFee',
+				'prize',
 				'numOfUses',
 			],
 			properties: {
@@ -64,9 +65,13 @@ export const topasAppSchema: Schema = {
 					dataType: 'uint64',
 					fieldNumber: 9,
 				},
+				prize: {
+					dataType: 'uint64',
+					fieldNumber: 10,
+				},
 				numOfUses: {
 					dataType: 'uint32',
-					fieldNumber: 10,
+					fieldNumber: 11,
 				},
 			},
 		},
