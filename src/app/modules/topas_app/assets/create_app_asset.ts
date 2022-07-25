@@ -42,7 +42,7 @@ export class CreateAppAsset extends BaseAsset {
 				id: bufferToHex(transaction.id),
 				creator: createUserEssentials(account, topasUser),
 				isPublished: false,
-				numOfUses: 0,
+				purchases: 0,
 			},
 		};
 

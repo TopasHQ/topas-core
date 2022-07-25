@@ -49,7 +49,7 @@ export const getAppsUsage = async (channel: BaseChannel) => {
 	const result: { [key: string]: number } = {};
 
 	apps.forEach(app => {
-		result[app.data.id] = app.data.numOfUses;
+		result[app.data.id] = app.data.purchases;
 	});
 
 	return result;
@@ -68,7 +68,7 @@ export const getAppUsageById = async (channel: BaseChannel, params?: Record<stri
 		throw new Error('App does not exist.');
 	}
 
-	return app.data.numOfUses;
+	return app.data.purchases;
 };
 
 export const getHighscores = async (channel: BaseChannel) => {

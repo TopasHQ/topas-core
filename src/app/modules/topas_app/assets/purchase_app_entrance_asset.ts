@@ -59,7 +59,7 @@ export class PurchaseAppEntranceAsset extends BaseAsset {
 		});
 
 		if (app.data.mode === TopasAppMode.feeToChest) {
-			app.data.prize += entranceFee;
+			app.data.chest += entranceFee;
 		}
 
 		if (app.data.mode !== TopasAppMode.feeToChest) {
@@ -69,7 +69,7 @@ export class PurchaseAppEntranceAsset extends BaseAsset {
 			});
 		}
 
-		app.data.numOfUses += 1;
+		app.data.purchases += 1;
 		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
 
 		const appPurchase: TopasAppPurchase = {
