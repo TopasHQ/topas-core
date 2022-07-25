@@ -85,7 +85,7 @@ export class TopasAppModule extends BaseModule {
 		},
 	};
 
-	public async afterBlockApply({ stateStore, block, reducerHandler }: AfterBlockApplyContext) {
+	public async beforeBlockApply({ stateStore, block, reducerHandler }: AfterBlockApplyContext) {
 		// Logic to pay out prizes and reset chests / leaderboard
 		if (block.header.height % config.appLeaderboardDuration !== 0) {
 			return;
@@ -95,11 +95,11 @@ export class TopasAppModule extends BaseModule {
 		const apps = stateStoreData.apps.filter(a => a.data.mode === TopasAppMode.feeToChest);
 		const highscores = await getHighscores(reducerHandler);
 
-		this._logger.debug('Highscores');
-		this._logger.debug(highscores);
+		for (const app of apps) {
+			if (app.data.chest === BigInt('0')) {
+				return;
+			}
 
-		// eslint-disable-next-line @typescript-eslint/no-misused-promises
-		apps.forEach(async app => {
 			const scores = highscores.filter(s => s.app.appId === app.data.id).sort((x, y) => y.score - x.score);
 
 			if (!scores.length) {
@@ -112,17 +112,12 @@ export class TopasAppModule extends BaseModule {
 				address: cryptography.hexToBuffer((scores[0].user.address as unknown) as string),
 				amount: app.data.chest,
 			});
-		});
 
-		apps.forEach(app => {
-			const res = stateStoreData.apps.find(a => a.data.id === app.data.id);
-
-			if (res) {
-				res.data.chest = BigInt('0');
-			}
-		});
+			app.data.chest = BigInt('0');
+		}
 
 		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
+		this._logger.info('App leaderboard duration reached; prizes have been sent out and chests are reset');
 	}
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
