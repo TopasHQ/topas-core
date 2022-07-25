@@ -34,7 +34,8 @@ export interface TopasApp {
 		isPublished: boolean;
 		tipsEnabled: boolean;
 		entranceFee: bigint;
-		numOfUses: number;
+		purchases: number;
+		chest: bigint;
 	};
 }
 

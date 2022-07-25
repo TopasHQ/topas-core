@@ -25,7 +25,8 @@ export const topasAppSchema: Schema = {
 				'isPublished',
 				'tipsEnabled',
 				'entranceFee',
-				'numOfUses',
+				'chest',
+				'purchases',
 			],
 			properties: {
 				id: {
@@ -64,9 +65,13 @@ export const topasAppSchema: Schema = {
 					dataType: 'uint64',
 					fieldNumber: 9,
 				},
-				numOfUses: {
-					dataType: 'uint32',
+				chest: {
+					dataType: 'uint64',
 					fieldNumber: 10,
+				},
+				purchases: {
+					dataType: 'uint32',
+					fieldNumber: 11,
 				},
 			},
 		},

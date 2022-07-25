@@ -13,7 +13,7 @@ import { getStateStoreData, getTopasApp } from '../../../utils/store';
 import { validateHexString, validateIsPublished, validateRegistration } from '../../../utils/validation';
 import { TOPAS_APP_MODULE_KEY } from '../constants';
 import { purchaseAppEntranceAssetPropsSchema, topasAppModuleSchema } from '../schemas';
-import { PurchaseAppEntranceAssetProps, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
+import { PurchaseAppEntranceAssetProps, TopasAppMode, TopasAppModuleAccountProps, TopasAppModuleChainData } from '../types';
 
 export class PurchaseAppEntranceAsset extends BaseAsset {
 	public name = 'purchaseAppEntrance';
@@ -58,12 +58,18 @@ export class PurchaseAppEntranceAsset extends BaseAsset {
 			amount: entranceFee,
 		});
 
-		await reducerHandler.invoke('token:credit', {
-			address: app.data.creator.address,
-			amount: entranceFee,
-		});
+		if (app.data.mode === TopasAppMode.feeToChest) {
+			app.data.chest += entranceFee;
+		}
 
-		app.data.numOfUses += 1;
+		if (app.data.mode !== TopasAppMode.feeToChest) {
+			await reducerHandler.invoke('token:credit', {
+				address: app.data.creator.address,
+				amount: entranceFee,
+			});
+		}
+
+		app.data.purchases += 1;
 		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
 
 		const appPurchase: TopasAppPurchase = {

@@ -27,7 +27,8 @@ export const genesisApps: TopasApp[] = [
 			isPublished: true,
 			tipsEnabled: true,
 			entranceFee: BigInt('2500000000'),
-			numOfUses: 0,
+			chest: BigInt('0'),
+			purchases: 0,
 		},
 	},
 	{
@@ -54,7 +55,8 @@ export const genesisApps: TopasApp[] = [
 			isPublished: true,
 			tipsEnabled: false,
 			entranceFee: BigInt('10000000000'),
-			numOfUses: 0,
+			chest: BigInt('0'),
+			purchases: 0,
 		},
 	},
 	{
@@ -81,7 +83,8 @@ export const genesisApps: TopasApp[] = [
 			isPublished: true,
 			tipsEnabled: true,
 			entranceFee: BigInt('5000000000'),
-			numOfUses: 0,
+			chest: BigInt('0'),
+			purchases: 0,
 		},
 	},
 ];
