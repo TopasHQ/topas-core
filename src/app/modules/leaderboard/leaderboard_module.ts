@@ -5,7 +5,7 @@ import { getDataAccessData } from '../../utils/store';
 import { PostScoreAsset } from './assets/post_score_asset';
 import { LEADERBOARD_MODULE_INIT, LEADERBOARD_MODULE_KEY } from './constants';
 import { leaderboardAccountSchema, leaderboardModuleSchema } from './schemas';
-import { LeaderboardModuleChainData } from './types';
+import { Highscore, LeaderboardModuleChainData } from './types';
 
 export class LeaderboardModule extends BaseModule {
 	public name = ModuleName.Leaderboard;
@@ -21,7 +21,10 @@ export class LeaderboardModule extends BaseModule {
 			(await getDataAccessData<LeaderboardModuleChainData>(this._dataAccess, ModuleId.Leaderboard)).highscores,
 	};
 
-	public reducers = {};
+	public reducers = {
+		getHighscores: async (): Promise<Highscore[]> =>
+			(await getDataAccessData<LeaderboardModuleChainData>(this._dataAccess, ModuleId.Leaderboard)).highscores,
+	};
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
 		await _input.stateStore.chain.set(

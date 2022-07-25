@@ -1,9 +1,11 @@
-import { AfterGenesisBlockApplyContext, BaseModule, codec, cryptography } from 'lisk-sdk';
+import { AfterBlockApplyContext, AfterGenesisBlockApplyContext, BaseModule, codec, cryptography } from 'lisk-sdk';
 
+import config from '../../config';
 import { ModuleId, ModuleName, TopasAppPurchase } from '../../types';
 import { serializeData } from '../../utils/formats';
 import { senderOwnsValidPurchase } from '../../utils/helpers';
-import { getDataAccessData } from '../../utils/store';
+import { getHighscores } from '../../utils/reducer_handlers';
+import { getDataAccessData, getStateStoreData } from '../../utils/store';
 import { CreateAppAsset } from './assets/create_app_asset';
 import { PurchaseAppEntranceAsset } from './assets/purchase_app_entrance_asset';
 import { SetAppStateAsset } from './assets/set_app_state_asset';
@@ -11,7 +13,7 @@ import { TipCreatorAsset } from './assets/tip_creator_asset';
 import { UpdateAppAsset } from './assets/update_app_asset';
 import { TOPAS_APP_MODULE_INIT, TOPAS_APP_MODULE_KEY } from './constants';
 import { topasAppAccountSchema, topasAppModuleSchema } from './schemas';
-import { TopasApp, TopasAppModuleAccountProps, TopasAppModuleChainData } from './types';
+import { TopasApp, TopasAppMode, TopasAppModuleAccountProps, TopasAppModuleChainData } from './types';
 
 export class TopasAppModule extends BaseModule {
 	public name = ModuleName.TopasApp;
@@ -82,6 +84,46 @@ export class TopasAppModule extends BaseModule {
 			return account.topasApp.appsPurchases;
 		},
 	};
+
+	public async afterBlockApply({ stateStore, block, reducerHandler }: AfterBlockApplyContext) {
+		// Logic to pay out prizes and reset chests / leaderboard
+		if (block.header.height % config.appLeaderboardDuration !== 0) {
+			return;
+		}
+
+		const stateStoreData = await getStateStoreData<TopasAppModuleChainData>(stateStore, ModuleId.TopasApp);
+		const apps = stateStoreData.apps.filter(a => a.data.mode === TopasAppMode.feeToChest);
+		const highscores = await getHighscores(reducerHandler);
+
+		this._logger.debug('Highscores');
+		this._logger.debug(highscores);
+
+		// eslint-disable-next-line @typescript-eslint/no-misused-promises
+		apps.forEach(async app => {
+			const scores = highscores.filter(s => s.app.appId === app.data.id).sort((x, y) => y.score - x.score);
+
+			if (!scores.length) {
+				return;
+			}
+
+			this._logger.debug(scores[0]);
+
+			await reducerHandler.invoke('token:credit', {
+				address: cryptography.hexToBuffer((scores[0].user.address as unknown) as string),
+				amount: app.data.chest,
+			});
+		});
+
+		apps.forEach(app => {
+			const res = stateStoreData.apps.find(a => a.data.id === app.data.id);
+
+			if (res) {
+				res.data.chest = BigInt('0');
+			}
+		});
+
+		await stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, stateStoreData));
+	}
 
 	public async afterGenesisBlockApply(_input: AfterGenesisBlockApplyContext) {
 		await _input.stateStore.chain.set(TOPAS_APP_MODULE_KEY, codec.encode(topasAppModuleSchema, TOPAS_APP_MODULE_INIT));
