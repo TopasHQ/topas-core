@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostScoreAsset constructor should have valid schema 1`] = `
+Object {
+  "$id": "leaderboard/postScore-asset",
+  "properties": Object {
+    "appId": Object {
+      "dataType": "string",
+      "fieldNumber": 1,
+    },
+    "purchaseId": Object {
+      "dataType": "string",
+      "fieldNumber": 3,
+    },
+    "score": Object {
+      "dataType": "uint32",
+      "fieldNumber": 2,
+    },
+  },
+  "required": Array [
+    "appId",
+    "score",
+    "purchaseId",
+  ],
+  "title": "PostScoreAsset transaction asset for leaderboard module",
+  "type": "object",
+}
+`;

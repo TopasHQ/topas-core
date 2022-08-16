@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DestroyMonsterAsset constructor should have valid schema 1`] = `
+Object {
+  "$id": "monsters/destroyMonster-asset",
+  "properties": Object {
+    "id": Object {
+      "dataType": "string",
+      "fieldNumber": 1,
+    },
+  },
+  "required": Array [
+    "id",
+  ],
+  "title": "DestroyMonsterAsset transaction asset for monsters module",
+  "type": "object",
+}
+`;

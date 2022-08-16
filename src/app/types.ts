@@ -37,6 +37,7 @@ export enum ModuleId {
 	TopasUser = 1001,
 	Leaderboard = 1002,
 	Monsters = 1003,
+	Nft = 1004,
 }
 
 export enum ModuleName {
@@ -44,4 +45,5 @@ export enum ModuleName {
 	TopasUser = 'topasUser',
 	Leaderboard = 'leaderboard',
 	Monsters = 'monsters',
+	Nft = 'nft',
 }
