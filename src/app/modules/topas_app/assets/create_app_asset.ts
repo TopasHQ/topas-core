@@ -43,6 +43,7 @@ export class CreateAppAsset extends BaseAsset {
 				creator: createUserEssentials(account, topasUser),
 				isPublished: false,
 				purchases: 0,
+				chest: BigInt(0),
 			},
 		};
 

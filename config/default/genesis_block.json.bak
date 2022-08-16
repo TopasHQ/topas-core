@@ -140,6 +140,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -147,7 +148,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -182,6 +182,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -189,7 +190,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -224,6 +224,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -231,7 +232,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -266,6 +266,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -273,7 +274,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -308,6 +308,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -315,7 +316,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -350,6 +350,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -357,7 +358,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -392,6 +392,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -399,7 +400,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -434,6 +434,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -441,7 +442,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -476,6 +476,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -483,7 +484,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -518,6 +518,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -525,7 +526,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -560,6 +560,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -567,7 +568,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -602,6 +602,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -609,7 +610,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -644,6 +644,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -651,7 +652,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -686,6 +686,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -693,7 +694,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -728,6 +728,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -735,7 +736,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -770,6 +770,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -777,7 +778,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -812,6 +812,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -819,7 +820,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -854,6 +854,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -861,7 +862,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -896,6 +896,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -903,7 +904,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -938,6 +938,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -945,7 +946,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -980,6 +980,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -987,7 +988,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1022,6 +1022,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1029,7 +1030,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1064,6 +1064,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1071,7 +1072,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1106,6 +1106,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1113,7 +1114,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1148,6 +1148,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1155,7 +1156,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1190,6 +1190,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1197,7 +1198,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1232,6 +1232,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1239,7 +1240,6 @@
 					"topasUser": {
 						"username": "Olivia",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "2022-06-20T12:43:27Z",
 							"unix": 1649929011
@@ -1274,6 +1274,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1281,7 +1282,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1316,6 +1316,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1323,7 +1324,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1358,6 +1358,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1365,7 +1366,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1400,6 +1400,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1407,7 +1408,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1442,6 +1442,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1449,7 +1450,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1484,6 +1484,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1491,7 +1492,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1526,6 +1526,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1533,7 +1534,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1568,6 +1568,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1575,7 +1576,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1610,6 +1610,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1617,7 +1618,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1652,6 +1652,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1659,7 +1660,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1694,6 +1694,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1701,7 +1702,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1736,6 +1736,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1743,7 +1744,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1778,6 +1778,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1785,7 +1786,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1820,6 +1820,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1827,7 +1828,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1862,6 +1862,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1869,7 +1870,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1904,6 +1904,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1911,7 +1912,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1946,6 +1946,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1953,7 +1954,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1988,6 +1988,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -1995,7 +1996,6 @@
 					"topasUser": {
 						"username": "Maxima",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "2022-06-20T12:43:27Z",
 							"unix": 1649929011
@@ -2030,6 +2030,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2037,7 +2038,6 @@
 					"topasUser": {
 						"username": "Wololo",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "2022-06-20T12:43:27Z",
 							"unix": 1649929011
@@ -2072,6 +2072,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2079,7 +2080,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2114,6 +2114,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2121,7 +2122,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2156,6 +2156,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2163,7 +2164,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2198,6 +2198,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2205,7 +2206,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2240,6 +2240,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2247,7 +2248,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2282,6 +2282,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2289,7 +2290,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2324,6 +2324,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2331,7 +2332,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2366,6 +2366,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2373,7 +2374,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2408,6 +2408,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2415,7 +2416,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2450,6 +2450,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2457,7 +2458,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2492,6 +2492,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2499,7 +2500,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2534,6 +2534,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2541,7 +2542,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2576,6 +2576,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2583,7 +2584,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2618,6 +2618,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2625,7 +2626,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2660,6 +2660,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2667,7 +2668,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2702,6 +2702,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2709,7 +2710,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2744,6 +2744,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2751,7 +2752,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2786,6 +2786,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2793,7 +2794,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2828,6 +2828,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2835,7 +2836,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2870,6 +2870,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2877,7 +2878,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2912,6 +2912,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2919,7 +2920,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2954,6 +2954,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -2961,7 +2962,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2996,6 +2996,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3003,7 +3004,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3038,6 +3038,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3045,7 +3046,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3080,6 +3080,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3087,7 +3088,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3122,6 +3122,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3129,7 +3130,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3164,6 +3164,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3171,7 +3172,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3206,6 +3206,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3213,7 +3214,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3248,6 +3248,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3255,7 +3256,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3290,6 +3290,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3297,7 +3298,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3332,6 +3332,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3339,7 +3340,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3374,6 +3374,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3381,7 +3382,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3416,6 +3416,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3423,7 +3424,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3458,6 +3458,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3465,7 +3466,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3500,6 +3500,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3507,7 +3508,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3542,6 +3542,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3549,7 +3550,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3584,6 +3584,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3591,7 +3592,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3626,6 +3626,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3633,7 +3634,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3668,6 +3668,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3675,7 +3676,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3710,6 +3710,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3717,7 +3718,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3752,6 +3752,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3759,7 +3760,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3794,6 +3794,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3801,7 +3802,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3836,6 +3836,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3843,7 +3844,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3878,6 +3878,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3885,7 +3886,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3920,6 +3920,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3927,7 +3928,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3962,6 +3962,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -3969,7 +3970,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4004,6 +4004,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4011,7 +4012,6 @@
 					"topasUser": {
 						"username": "John",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "2022-06-20T12:43:27Z",
 							"unix": 1649929011
@@ -4046,6 +4046,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4053,7 +4054,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4088,6 +4088,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4095,7 +4096,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4130,6 +4130,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4137,7 +4138,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4172,6 +4172,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4179,7 +4180,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4214,6 +4214,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4221,7 +4222,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4256,6 +4256,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4263,7 +4264,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4298,6 +4298,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4305,7 +4306,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4340,6 +4340,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4347,7 +4348,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4382,6 +4382,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4389,7 +4390,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4424,6 +4424,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4431,7 +4432,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4466,6 +4466,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4473,7 +4474,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4508,6 +4508,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4515,7 +4516,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4550,6 +4550,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4557,7 +4558,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4592,6 +4592,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4599,7 +4600,6 @@
 					"topasUser": {
 						"username": "Alice",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "2022-06-20T12:43:27Z",
 							"unix": 1649929011
@@ -4634,6 +4634,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4641,7 +4642,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4676,6 +4676,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4683,7 +4684,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4718,6 +4718,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4725,7 +4726,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4760,6 +4760,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4767,7 +4768,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4802,6 +4802,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4809,7 +4810,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4844,6 +4844,7 @@
 						"sentVotes": [],
 						"unlocking": []
 					},
+
 					"topasApp": {
 						"appsCreated": [],
 						"appsPurchases": []
@@ -4851,7 +4852,6 @@
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
