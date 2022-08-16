@@ -47,6 +47,12 @@ export class TopasApiPlugin extends BasePlugin {
 			getHighscoresByAppId: async params => actionHandlers.getHighscoresByAppId(this._channel, params),
 			getHighscoresByUserAddress: async params => actionHandlers.getHighscoresByUserAddress(this._channel, params),
 			getActiveMonsters: async () => actionHandlers.getActiveMonsters(this._channel),
+			getCards: async () => actionHandlers.getCards(this._channel),
+			getBasicCards: async () => actionHandlers.getBasicCards(this._channel),
+			getEliteCards: async () => actionHandlers.getEliteCards(this._channel),
+			getAvailableCards: async () => actionHandlers.getAvailableCards(this._channel),
+			getUnavailableCards: async () => actionHandlers.getUnavailableCards(this._channel),
+			getCardsByUserAddress: async () => actionHandlers.getCardsByUserAddress(this._channel),
 		};
 	}
 

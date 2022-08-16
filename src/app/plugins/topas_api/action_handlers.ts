@@ -2,6 +2,7 @@ import { BaseChannel, cryptography } from 'lisk-sdk';
 
 import { Highscore } from '../../modules/leaderboard/types';
 import { Monster } from '../../modules/monsters/types';
+import { AccessCard, AccessCardType } from '../../modules/nft/types';
 import { TopasApp } from '../../modules/topas_app/types';
 import { ModuleName } from '../../types';
 import { isArrayOfStrings } from '../../utils/formats';
@@ -11,6 +12,7 @@ const moduleActions = {
 	getApps: `${ModuleName.TopasApp}:getApps`,
 	getHighscores: `${ModuleName.Leaderboard}:getHighscores`,
 	getActiveMonsters: `${ModuleName.Monsters}:getActiveMonsters`,
+	getCards: `${ModuleName.Nft}:getCards`,
 };
 
 export const getApps = async (channel: BaseChannel) => {
@@ -120,4 +122,50 @@ export const getActiveMonsters = async (channel: BaseChannel) => {
 	const apps = await channel.invoke<Monster[]>(moduleActions.getActiveMonsters);
 
 	return apps;
+};
+
+export const getCards = async (channel: BaseChannel) => {
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	return cards;
+};
+
+export const getEliteCards = async (channel: BaseChannel) => {
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	return cards.filter(card => card.data.type === AccessCardType.Elite);
+};
+
+export const getBasicCards = async (channel: BaseChannel) => {
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	return cards.filter(card => card.data.type === AccessCardType.Basic);
+};
+
+export const getAvailableCards = async (channel: BaseChannel) => {
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	return cards.filter(card => !card.data.owned);
+};
+
+export const getUnavailableCards = async (channel: BaseChannel) => {
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	return cards.filter(card => card.data.owned);
+};
+
+export const getCardsByUserAddress = async (channel: BaseChannel, params?: Record<string, unknown>) => {
+	if (typeof params?.address !== 'string') {
+		throw new Error('Address param must be a string.');
+	}
+
+	let addressBuffer: Buffer;
+
+	if (typeof params.address === 'string') {
+		addressBuffer = cryptography.hexToBuffer(params.address);
+	}
+
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	return cards.filter(card => buffersAreEqual(card.data.owner.address, addressBuffer));
 };
