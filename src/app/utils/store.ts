@@ -4,6 +4,8 @@ import { LEADERBOARD_MODULE_INIT, LEADERBOARD_MODULE_KEY } from '../modules/lead
 import { leaderboardModuleSchema } from '../modules/leaderboard/schemas';
 import { MONSTERS_MODULE_INIT, MONSTERS_MODULE_KEY } from '../modules/monsters/constants';
 import { monstersModuleSchema } from '../modules/monsters/schemas';
+import { NFT_MODULE_INIT, NFT_MODULE_KEY } from '../modules/nft/constants';
+import { nftModuleSchema } from '../modules/nft/schemas';
 import { TOPAS_APP_MODULE_INIT, TOPAS_APP_MODULE_KEY } from '../modules/topas_app/constants';
 import { topasAppModuleSchema } from '../modules/topas_app/schemas';
 import { TopasAppModuleChainData } from '../modules/topas_app/types';
@@ -25,6 +27,11 @@ const getModuleInfo = <T>(module: ModuleId) => {
 			key: MONSTERS_MODULE_KEY,
 			init: MONSTERS_MODULE_INIT,
 			schema: monstersModuleSchema,
+		},
+		[ModuleId.Nft]: {
+			key: NFT_MODULE_KEY,
+			init: NFT_MODULE_INIT,
+			schema: nftModuleSchema,
 		},
 	};
 
