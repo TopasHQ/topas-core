@@ -4,7 +4,7 @@ export interface NftModuleChainData {
 	cards: AccessCard[];
 }
 
-export type TopasAppModuleAccountProps = AccountDefaultProps & {
+export type NftModuleAccountProps = AccountDefaultProps & {
 	nft: {
 		cards: AccessCard[];
 	};

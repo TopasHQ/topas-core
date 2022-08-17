@@ -30,10 +30,7 @@ export class TopasApiPlugin extends BasePlugin {
 	}
 
 	public get events(): EventsDefinition {
-		return [
-			// 'block:created',
-			// 'block:missed'
-		];
+		return [];
 	}
 
 	public get actions(): ActionsDefinition {
@@ -53,7 +50,7 @@ export class TopasApiPlugin extends BasePlugin {
 			getEliteCards: async () => actionHandlers.getEliteCards(this._channel),
 			getAvailableCards: async () => actionHandlers.getAvailableCards(this._channel),
 			getUnavailableCards: async () => actionHandlers.getUnavailableCards(this._channel),
-			getCardsByUserAddress: async () => actionHandlers.getCardsByUserAddress(this._channel),
+			getCardsByUserAddress: async params => actionHandlers.getCardsByUserAddress(this._channel, params),
 		};
 	}
 
