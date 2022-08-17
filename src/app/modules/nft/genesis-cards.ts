@@ -1,5 +1,4 @@
 import { cryptography } from 'lisk-sdk';
-
 import { createMeta } from '../../utils/helpers';
 import * as ids from './access-cards-uuids.json';
 import { AccessCard } from './types';
