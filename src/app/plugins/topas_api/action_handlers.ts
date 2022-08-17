@@ -130,6 +130,22 @@ export const getCards = async (channel: BaseChannel) => {
 	return cards;
 };
 
+export const getCardById = async (channel: BaseChannel, params?: Record<string, unknown>) => {
+	if (typeof params?.id !== 'string') {
+		throw new Error('Id param must be a string.');
+	}
+
+	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
+
+	const card = cards.find(c => c.data.id === params.id);
+
+	if (!card) {
+		throw new Error('Card does not exist.');
+	}
+
+	return card;
+};
+
 export const getEliteCards = async (channel: BaseChannel) => {
 	const cards = await channel.invoke<AccessCard[]>(moduleActions.getCards);
 
