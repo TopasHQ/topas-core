@@ -1312,7 +1312,12 @@
 					},
 
 					"topasApp": {
-						"appsCreated": [],
+						"appsCreated": [
+							{
+								"appId": "006a166b92a0fe77d65622baa08a0514ccbb37aba8e1c4c378d55ba80461a1c1",
+								"title": "Moon Jump"
+							}
+						],
 						"appsPurchases": []
 					},
 					"topasUser": {
@@ -2122,7 +2127,12 @@
 					},
 
 					"topasApp": {
-						"appsCreated": [],
+						"appsCreated": [
+							{
+								"appId": "5ba7040e8acb282f5a36989169d08a16acf0b30fc187d8fdeefdf0688a3e0b93",
+								"title": "Octa Blaster"
+							}
+						],
 						"appsPurchases": []
 					},
 					"topasUser": {
@@ -4282,7 +4292,12 @@
 					},
 
 					"topasApp": {
-						"appsCreated": [],
+						"appsCreated": [
+							{
+								"appId": "a14ceecfd6661bce927c231670c2ab34487872e46a90e7c891016594dfca2105",
+								"title": "Back Rooms"
+							}
+						],
 						"appsPurchases": []
 					},
 					"topasUser": {
@@ -4912,7 +4927,12 @@
 					},
 
 					"topasApp": {
-						"appsCreated": [],
+						"appsCreated": [
+							{
+								"appId": "c04a86b038008445bbcb9c3471797f673e29d77a12e1da58b947b2fa4fc5d60a",
+								"title": "Topas Run"
+							}
+						],
 						"appsPurchases": []
 					},
 					"topasUser": {
