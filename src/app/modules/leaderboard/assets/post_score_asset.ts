@@ -6,6 +6,7 @@ import {
     createHighscoreEssentials,
     createTopasAppEssentials,
     createUserEssentials,
+    senderIsAppCreator,
 } from '../../../utils/helpers';
 import { getAccountPurchases, getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
@@ -35,16 +36,19 @@ export class PostScoreAsset extends BaseAsset {
 		const topasApp = await getTopasAppById(reducerHandler, { id: asset.appId });
 		validateIsPublished(topasApp);
 
-		const appPurchases = (await getAccountPurchases(reducerHandler, { address: transaction.senderAddress })).filter(
-			p => p.appId === asset.appId && p.purchaseId === asset.purchaseId,
-		);
+		// validate app purchase for everyone except the creator
+		if (!senderIsAppCreator(topasApp, transaction)) {
+			const appPurchases = (await getAccountPurchases(reducerHandler, { address: transaction.senderAddress })).filter(
+				p => p.appId === asset.appId && p.purchaseId === asset.purchaseId,
+			);
 
-		if (!appPurchases.length) {
-			throw new Error('Score invalid. No valid entrance purchase found.');
-		}
+			if (!appPurchases.length) {
+				throw new Error('Score invalid. No valid entrance purchase found.');
+			}
 
-		if ((topasApp.data.mode as number) !== TopasAppMode.feeToCreatorLifetime && appPurchases.length > 0) {
-			validatePurchaseDate(appPurchases.pop() as TopasAppPurchase);
+			if ((topasApp.data.mode as number) !== TopasAppMode.feeToCreatorLifetime && appPurchases.length > 0) {
+				validatePurchaseDate(appPurchases.pop() as TopasAppPurchase);
+			}
 		}
 
 		const stateStoreData = await getStateStoreData<LeaderboardModuleChainData>(stateStore, ModuleId.Leaderboard);
