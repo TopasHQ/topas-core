@@ -142,12 +142,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -155,6 +155,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "03868ad13f0b549cc0c3741d0a8b176d86fce8dd"
 				},
@@ -184,12 +187,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -197,6 +200,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "066efc73b8acb101306aa980443d97f99b8af1ce"
 				},
@@ -226,12 +232,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -239,6 +245,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "094c05b296df3b596710404173c5278125bc86ea"
 				},
@@ -268,12 +277,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -281,6 +290,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "0a0fb2a6cd7525b071d11dd6d6044ac3419b87b0"
 				},
@@ -310,12 +322,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -323,6 +335,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "0b2c7bf732802e3042d919d41541e1d5fb196d52"
 				},
@@ -352,12 +367,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -365,6 +380,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "0d92aa5aaa090262a7c640012a5f6fce17c3e58a"
 				},
@@ -394,12 +412,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -407,6 +425,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "0da83aec1f1714e6d7dcb4d4583f0d7606e72644"
 				},
@@ -436,12 +457,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -449,6 +470,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "1235fa6ab63b32b0a36c47c9ea94ea63764ff515"
 				},
@@ -478,12 +502,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -491,6 +515,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "1280a62e809996305c722feee2993117c6ed11b3"
 				},
@@ -520,12 +547,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -533,6 +560,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "1556ffd41c09242441259ec77970e3722a582fab"
 				},
@@ -562,12 +592,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -575,6 +605,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "161d5b8ad399feacb033050dc9fabb05a9b8a608"
 				},
@@ -604,12 +637,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -617,6 +650,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "18f0c6baa6f0976595dfc995077cad152db243c1"
 				},
@@ -646,12 +682,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -659,6 +695,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "1b3e91177726d46bdbe2c4ac25793a9f357f2054"
 				},
@@ -688,12 +727,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -701,6 +740,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "1fa150b4400ed1bb691747de9ebe3640d56f5454"
 				},
@@ -730,12 +772,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -743,6 +785,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "20737e35ae845bcce693486d4c5036fc6a98f14c"
 				},
@@ -772,12 +817,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -785,6 +830,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "25ea3b328fa7f851ecbfac844e2c9a4c6f7f9f14"
 				},
@@ -814,12 +862,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -827,6 +875,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "292e152f01b9869c9c0ee9bb9052652c59e59d3a"
 				},
@@ -856,12 +907,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -869,6 +920,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "2fd4bd6a55743f032d7114316c958e33e2eb52eb"
 				},
@@ -898,12 +952,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -911,6 +965,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "3167d6c64c7d2d3e4493c7d6703888b2efa43d2c"
 				},
@@ -940,12 +997,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -953,6 +1010,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "35ffcdd17a7c9f55e7466c7acac3fab03429e325"
 				},
@@ -982,12 +1042,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -995,6 +1055,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "37a4165c2407a57ecbf33b6434c3010650aab808"
 				},
@@ -1024,12 +1087,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1037,6 +1100,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "3ab14b33677fbe1639a90eceffa9d8480f4cf806"
 				},
@@ -1066,12 +1132,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1079,6 +1145,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "40cae90403d39eb55f37cac529a76c1027f962ea"
 				},
@@ -1108,12 +1177,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1121,6 +1190,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "434e55c50bd7af627725f0e64731ac9c2f8c0d1e"
 				},
@@ -1150,12 +1222,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1163,6 +1235,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "449b74883e5d984a06b55fbfcc5d624a86bd7656"
 				},
@@ -1192,12 +1267,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1205,6 +1280,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "45780f1938c92994f48d3560c902ed74a03e913e"
 				},
@@ -1234,19 +1312,22 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
-						"username": "",
+						"username": "Olivia",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
-							"human": "",
-							"unix": 0
+							"human": "2022-06-20T12:43:27Z",
+							"unix": 1649929011
 						}
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "48f798ee1977b70c09c729238d482f195da3882a"
 				},
@@ -1276,12 +1357,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1289,6 +1370,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "4c54001bb47a8df7bc54f1bed8ed11632b04b00c"
 				},
@@ -1318,12 +1402,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1331,6 +1415,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "4e547d01a3d164a30848ff5d822b3223e59d2525"
 				},
@@ -1360,12 +1447,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1373,6 +1460,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "515546809fcf27ab04bfb73a39fa3ade92e260b3"
 				},
@@ -1402,12 +1492,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1415,6 +1505,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "54481a5dfa9cdad7972963d7fc001cbf5b724b3f"
 				},
@@ -1444,12 +1537,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1457,6 +1550,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "55b81db66730173b4f59b4cd24d45adb454d2d1d"
 				},
@@ -1486,12 +1582,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1499,6 +1595,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "5691d022205f45c0a13570c77089fda208855f75"
 				},
@@ -1528,12 +1627,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1541,6 +1640,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "59c1fc6d31dfc52e6ff80d037ba6c5c315231a04"
 				},
@@ -1570,12 +1672,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1583,6 +1685,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "5a95340644c80f7c5e7dbdc010807008df383186"
 				},
@@ -1612,12 +1717,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1625,6 +1730,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "5bef6b3a165e5bf0695d718884d639e54dc19daa"
 				},
@@ -1654,12 +1762,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1667,6 +1775,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "5c5341cdf2951c46e7bedbca7e881ea92da67504"
 				},
@@ -1696,12 +1807,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1709,6 +1820,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "5c71e6646baf223f98778e919c2a7c8bb62666aa"
 				},
@@ -1738,12 +1852,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1751,6 +1865,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "60a5aaece40aa27a7697cdee0f1897c1afad1b5f"
 				},
@@ -1780,12 +1897,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1793,6 +1910,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "615652899ae89d22f7bfd19e55df7e78238383fc"
 				},
@@ -1822,12 +1942,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1835,6 +1955,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "633ca2d47f942419c9f0b177f8674d34f966babc"
 				},
@@ -1864,12 +1987,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1877,6 +2000,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "63b76d497caf043ab1f6c92ca13e3b8fbadea50d"
 				},
@@ -1906,12 +2032,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1919,6 +2045,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "677efab896ffceb2546122d0ad4624f44d3b5cde"
 				},
@@ -1948,12 +2077,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -1961,6 +2090,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "67e3fe59e37d49917d5d9c7c6c1cad703958c57a"
 				},
@@ -1990,19 +2122,22 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
-						"username": "",
+						"username": "Maxima",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
-							"human": "",
-							"unix": 0
+							"human": "2022-06-20T12:43:27Z",
+							"unix": 1649929011
 						}
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "686aedfb805bb407a3abbf7e95b9d5a4b88b8ffb"
 				},
@@ -2032,19 +2167,22 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
-						"username": "",
+						"username": "Wololo",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
-							"human": "",
-							"unix": 0
+							"human": "2022-06-20T12:43:27Z",
+							"unix": 1649929011
 						}
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "6bac0c7b36607b2cceed4071f435b1c1bec031a4"
 				},
@@ -2074,12 +2212,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2087,6 +2225,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "6d5bdd195a35200e0a14049e0244bee2d3ec4805"
 				},
@@ -2116,12 +2257,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2129,6 +2270,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "6e6c809dea9fcfe5a7412a3d0b44816b9505834b"
 				},
@@ -2158,12 +2302,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2171,6 +2315,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "732ead9b16c4070bfd8c5aeae75ff8035c6bf557"
 				},
@@ -2200,12 +2347,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2213,6 +2360,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "7476598e7ed0ce4c8d704a018b584b18a44ec0b5"
 				},
@@ -2242,12 +2392,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2255,6 +2405,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "747e17dbb3ba0708f9e3a7b4fefb0760d0de70aa"
 				},
@@ -2284,12 +2437,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2297,6 +2450,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "7559c55ebe3790ce0f534b1aed13d2f517770329"
 				},
@@ -2326,12 +2482,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2339,6 +2495,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "76328b12ac61b4dea235176874ef0e13328cb0ba"
 				},
@@ -2368,12 +2527,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2381,6 +2540,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "82bc39ecea1e7bad6ddfe716f697be265d3e157f"
 				},
@@ -2410,12 +2572,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2423,6 +2585,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8367db5815708fbee5fc2996cb251cf11491182a"
 				},
@@ -2452,12 +2617,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2465,6 +2630,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8941c34a4eece7bfda354f1c19d08a9b682c3773"
 				},
@@ -2494,12 +2662,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2507,6 +2675,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8af803206cbf7993cdde8948a83ab038e17b0982"
 				},
@@ -2536,12 +2707,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2549,6 +2720,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8c5b749b196fa87273e9eed00464ee0865fde3ea"
 				},
@@ -2578,12 +2752,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2591,6 +2765,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8d42e592034dabfa343a58c52410c431361218d0"
 				},
@@ -2620,12 +2797,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2633,6 +2810,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8ed3febbd068a682f9cecd572356a0fc934c8541"
 				},
@@ -2662,12 +2842,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2675,6 +2855,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "8f05ca2b93c7db7f28a59ca337a033ebac6c962e"
 				},
@@ -2704,12 +2887,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2717,6 +2900,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "919eafa6fb906dce5d0dfc982c22157e6d613cb6"
 				},
@@ -2746,12 +2932,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2759,6 +2945,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "91a09826cd4a24605ce093cdabc344df57565e23"
 				},
@@ -2788,12 +2977,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2801,6 +2990,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "93d538a5f18bd169188f1602a5b2e7702bc4ed1e"
 				},
@@ -2830,12 +3022,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2843,6 +3035,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "94452c46bbf07b4f7b91d202dee84fd6403bf274"
 				},
@@ -2872,12 +3067,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2885,6 +3080,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "95f2e84eb2bba98e3e57f85bf6e6d27885b778f8"
 				},
@@ -2914,12 +3112,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2927,6 +3125,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "988184471418dfb9250e7a38136006d99a4c4937"
 				},
@@ -2956,12 +3157,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -2969,6 +3170,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "9c2c4f13311016a7a8074ccc07aa8f82fa4d1869"
 				},
@@ -2998,12 +3202,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3011,6 +3215,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "a3c40a2cdb1802ba7ab80fa43f15887536a6ccda"
 				},
@@ -3040,12 +3247,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3053,6 +3260,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "a9440e936637db757fa407c0a38c9f1e7773a55b"
 				},
@@ -3082,12 +3292,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3095,6 +3305,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "a9f284d3980a5de217814ee1ecb4dd0f1508ca54"
 				},
@@ -3124,12 +3337,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3137,6 +3350,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "aa4cf8efc94b4e9a849d088cc9628d9e60d341d4"
 				},
@@ -3166,12 +3382,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3179,6 +3395,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "aa852dd15207f9dbc2f16d9bce2faabd630f8304"
 				},
@@ -3208,12 +3427,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3221,6 +3440,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "aaaf3bc2c3dda87395e910b78bc4f71f043b633b"
 				},
@@ -3250,12 +3472,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3263,6 +3485,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "af28c03fdbe34c28b9abb6c2d678ed4307c8db82"
 				},
@@ -3292,12 +3517,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3305,6 +3530,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "b1428ed2e5bdd21a9c7ab4b94169b21c128ade5e"
 				},
@@ -3334,12 +3562,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3347,6 +3575,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "b17190a00a0dfa3a015057884c7e277f60a25c71"
 				},
@@ -3376,12 +3607,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3389,6 +3620,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "b2cda9a99ff9f6136a2e74f34b63db64aa685631"
 				},
@@ -3418,12 +3652,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3431,6 +3665,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "b51aaafa630fa72363276729adfb704dec6dc2cf"
 				},
@@ -3460,12 +3697,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3473,6 +3710,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "b52e4dcad738a7f8a5a0e4e3f59bfa0ff2357ff3"
 				},
@@ -3502,12 +3742,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3515,6 +3755,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "b692f970e84aa2d452f656918529563ec297e5e9"
 				},
@@ -3544,12 +3787,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3557,6 +3800,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "bbbc4b1eba6b2d68fa383dcecbee4687241a75b3"
 				},
@@ -3586,12 +3832,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3599,6 +3845,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "bbca674c51514b62e71549dcb11441cd5f3320d6"
 				},
@@ -3628,12 +3877,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3641,6 +3890,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "bff9ab91d8aea2d4f4dde0c7671f5b9c83a393d1"
 				},
@@ -3670,12 +3922,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3683,6 +3935,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "bfffd291c0b94dd4afccdc4c959a1cb548293a07"
 				},
@@ -3712,12 +3967,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3725,6 +3980,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c11074d0eaacdfec9cf1af58717452761ccd3d3e"
 				},
@@ -3754,12 +4012,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3767,6 +4025,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c39a83a5c6b65a307931b0496f6553c29e85f15a"
 				},
@@ -3796,12 +4057,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3809,6 +4070,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c4254abe82a6c4103164fe906bf7161a8d1d58cf"
 				},
@@ -3838,12 +4102,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3851,6 +4115,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c6192fbba55603b34ee7d0e7f2178468bfb4a4a5"
 				},
@@ -3880,12 +4147,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3893,6 +4160,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c7be31e83bbd74a6d65426c1201521fbd283334a"
 				},
@@ -3922,12 +4192,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3935,6 +4205,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c8beb5138408b1cf74b2c4debca839ead33ef25b"
 				},
@@ -3964,12 +4237,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -3977,6 +4250,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c8fd3f4fa0d1f0447975b4c556361b74bc19ca1c"
 				},
@@ -4006,19 +4282,22 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
-						"username": "",
+						"username": "John",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
-							"human": "",
-							"unix": 0
+							"human": "2022-06-20T12:43:27Z",
+							"unix": 1649929011
 						}
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "c9e602d023ad383f2ba0090cadad0983817f4fb7"
 				},
@@ -4048,12 +4327,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4061,6 +4340,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "cbbd3aa31f77f292b64ab2866e39924cc6c7e34d"
 				},
@@ -4090,12 +4372,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4103,6 +4385,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "cc6f68a58de9abb4e6695155a96a68fe4f294be1"
 				},
@@ -4132,12 +4417,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4145,6 +4430,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "cc9779cb7ee040f0c86d26908518f9ea971288fd"
 				},
@@ -4174,12 +4462,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4187,6 +4475,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "ce17af5df0b2d20bfb6ec68ee35a8f107c0e3039"
 				},
@@ -4216,12 +4507,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4229,6 +4520,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "cff7942ff65198eaef87a3307c04c52c593011e0"
 				},
@@ -4258,12 +4552,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4271,6 +4565,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "d1c70c024d781cbb565b9f37c9a7829ededdd88c"
 				},
@@ -4300,12 +4597,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4313,6 +4610,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "d2f8a5f6c784424dc6064f5b517f83bd558bf00c"
 				},
@@ -4342,12 +4642,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4355,6 +4655,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "d48ec52469e7d227a728473dae9f96400a4798e5"
 				},
@@ -4384,12 +4687,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4397,6 +4700,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "d61d761a9baadd84186580a4e6e52db7944b91c6"
 				},
@@ -4426,12 +4732,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4439,6 +4745,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "d84f5d44823617621cfcf4ebfe17ca3a57221739"
 				},
@@ -4468,12 +4777,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4481,6 +4790,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "d9c8f919685015f70607c33a360a7d53c2d9cc00"
 				},
@@ -4510,12 +4822,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4523,6 +4835,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "db2cd7bf1134d50bbba5769054789bc982ddf4f7"
 				},
@@ -4552,12 +4867,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4565,6 +4880,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "e321015f45984a8f62c7cac688a80921df354945"
 				},
@@ -4594,19 +4912,22 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
-						"username": "",
+						"username": "Alice",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
-							"human": "",
-							"unix": 0
+							"human": "2022-06-20T12:43:27Z",
+							"unix": 1649929011
 						}
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "ea9c5c0dd9e67757a06d4830b23e84c8d60bd64e"
 				},
@@ -4636,12 +4957,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4649,6 +4970,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "eaa24f567bebaac9fef101ccf324758f525ac83d"
 				},
@@ -4678,12 +5002,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4691,6 +5015,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "f0cb4014bfd4fdc5fec2d3386d1ccf7bf769a981"
 				},
@@ -4720,12 +5047,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4733,6 +5060,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "f6e0a19f147f753f54a2c1c68f33f19c819e5104"
 				},
@@ -4762,12 +5092,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4775,6 +5105,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "f6e2ce0ffe9b03baaa99e3ccdc185966d96318db"
 				},
@@ -4804,12 +5137,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4817,6 +5150,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "fabf0952015728e6a15518ee1098b475c0d0a905"
 				},
@@ -4846,12 +5182,12 @@
 					},
 
 					"topasApp": {
-						"apps": []
+						"appsCreated": [],
+						"appsPurchases": []
 					},
 					"topasUser": {
 						"username": "",
 						"avatar": "",
-						"memberType": 0,
 						"memberSince": {
 							"human": "",
 							"unix": 0
@@ -4859,6 +5195,9 @@
 					},
 					"leaderboard": {
 						"highscores": []
+					},
+					"nft": {
+						"cards": []
 					},
 					"address": "fdb940db900ecc88c60d3d9fdffaea99eab3e31f"
 				}

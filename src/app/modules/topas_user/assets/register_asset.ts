@@ -1,46 +1,22 @@
 import { ApplyAssetContext, BaseAsset, ValidateAssetContext } from 'lisk-sdk';
 
-import config from '../../../config';
-import { MemberType, TopasUser, TopasUserModuleAccountProps } from '../../../types';
 import { createDateTime } from '../../../utils/helpers';
-import { validateAvatar, validateFee } from '../../../utils/validation';
-import { TOPAS_USER_ASSET_IDS, TOPAS_USER_FEES } from '../constants';
-
-type Props = {
-	username: string;
-	avatar: string;
-};
+import { validateTransactionFee, validateUuid } from '../../../utils/validation';
+import { registerAssetPropsSchema } from '../schemas';
+import { RegisterAssetProps, TopasUser, TopasUserModuleAccountProps } from '../types';
 
 export class RegisterAsset extends BaseAsset {
 	public name = 'register';
-	public id = TOPAS_USER_ASSET_IDS.register;
-	public fee = TOPAS_USER_FEES.register;
+	public id = 1;
+	public fee = BigInt('1000000000');
+	public schema = registerAssetPropsSchema;
 
-	public schema = {
-		$id: 'topasUser/register-asset',
-		title: 'RegisterAsset transaction asset for topasUser module',
-		type: 'object',
-		required: ['username', 'avatar'],
-		properties: {
-			username: {
-				dataType: 'string',
-				fieldNumber: 1,
-				minLength: config.usernameMinLength,
-				maxLength: config.usernameMaxLength,
-			},
-			avatar: {
-				dataType: 'string',
-				fieldNumber: 2,
-			},
-		},
-	};
-
-	public validate({ transaction, asset }: ValidateAssetContext<Props>): void {
-		validateFee(transaction, this.fee);
-		validateAvatar(asset.avatar);
+	public validate({ transaction, asset }: ValidateAssetContext<RegisterAssetProps>): void {
+		validateTransactionFee(transaction, this.fee);
+		validateUuid(asset.avatar);
 	}
 
-	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({ asset, transaction, stateStore }: ApplyAssetContext<RegisterAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<TopasUserModuleAccountProps>(transaction.senderAddress);
 
 		if (account.topasUser.username) {
@@ -49,7 +25,6 @@ export class RegisterAsset extends BaseAsset {
 
 		const user: TopasUser = {
 			...asset,
-			memberType: MemberType.Registered,
 			memberSince: createDateTime(),
 		};
 

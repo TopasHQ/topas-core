@@ -1,50 +1,55 @@
-import { ApplyAssetContext, BaseAsset, codec } from 'lisk-sdk';
+import { ApplyAssetContext, BaseAsset, codec, ValidateAssetContext } from 'lisk-sdk';
 
-import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, ModuleId } from '../../../types';
+import { ModuleId, TopasAppPurchase } from '../../../types';
 import {
     createDateTime,
     createHighscoreEssentials,
     createTopasAppEssentials,
     createUserEssentials,
+    senderIsAppCreator,
 } from '../../../utils/helpers';
-import { getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
+import { getAccountPurchases, getTopasAppById, getTopasUserData } from '../../../utils/reducer_handlers';
 import { getStateStoreData } from '../../../utils/store';
-import { validateIsPublished } from '../../../utils/validation';
-import { LEADERBOARD_ASSET_IDS } from '../constants';
-import { LEADERBOARD_KEY, leaderboardModuleSchema } from '../schemas';
-
-type Props = {
-	score: number;
-	appId: string;
-};
+import { validateHexString, validateIsPublished, validatePurchaseDate } from '../../../utils/validation';
+import { TopasAppMode } from '../../topas_app/types';
+import { LEADERBOARD_MODULE_KEY } from '../constants';
+import { leaderboardModuleSchema, postScoreAssetPropsSchema } from '../schemas';
+import { Highscore, LeaderboardModuleAccountProps, LeaderboardModuleChainData, PostScoreAssetProps } from '../types';
 
 export class PostScoreAsset extends BaseAsset {
 	public name = 'postScore';
-	public id = LEADERBOARD_ASSET_IDS.postScore;
+	public id = 1;
+	public schema = postScoreAssetPropsSchema;
 
-	// Define schema for asset
-	public schema = {
-		$id: 'leaderboard/postScore-asset',
-		title: 'PostScoreAsset transaction asset for leaderboard module',
-		type: 'object',
-		required: ['appId', 'score'],
-		properties: {
-			appId: {
-				dataType: 'string',
-				fieldNumber: 1,
-			},
-			score: {
-				dataType: 'uint32',
-				fieldNumber: 2,
-			},
-		},
-	};
+	public validate({ asset }: ValidateAssetContext<PostScoreAssetProps>): void {
+		validateHexString(asset.appId);
+	}
 
-	public async apply({ asset, transaction, stateStore, reducerHandler }: ApplyAssetContext<Props>): Promise<void> {
+	public async apply({
+		asset,
+		transaction,
+		stateStore,
+		reducerHandler,
+	}: ApplyAssetContext<PostScoreAssetProps>): Promise<void> {
 		const account = await stateStore.account.getOrDefault<LeaderboardModuleAccountProps>(transaction.senderAddress);
 		const topasUser = await getTopasUserData(reducerHandler, { address: account.address, errorOnEmpty: true });
 		const topasApp = await getTopasAppById(reducerHandler, { id: asset.appId });
 		validateIsPublished(topasApp);
+
+		// validate app purchase for everyone except the creator
+		if (!senderIsAppCreator(topasApp, transaction)) {
+			const appPurchases = (await getAccountPurchases(reducerHandler, { address: transaction.senderAddress })).filter(
+				p => p.appId === asset.appId && p.purchaseId === asset.purchaseId,
+			);
+
+			if (!appPurchases.length) {
+				throw new Error('Score invalid. No valid entrance purchase found.');
+			}
+
+			if ((topasApp.data.mode as number) !== TopasAppMode.feeToCreatorLifetime && appPurchases.length > 0) {
+				validatePurchaseDate(appPurchases.pop() as TopasAppPurchase);
+			}
+		}
 
 		const stateStoreData = await getStateStoreData<LeaderboardModuleChainData>(stateStore, ModuleId.Leaderboard);
 
@@ -59,7 +64,7 @@ export class PostScoreAsset extends BaseAsset {
 
 		// Check if user has already posted highscore for app
 		const moduleIndex = stateStoreData.highscores.findIndex(
-			score => score.user.username === topasUser.username && score.app.id === asset.appId,
+			score => score.user.username === topasUser.username && score.app.appId === asset.appId,
 		);
 
 		// If so, check if score is higher and update both module and account data
@@ -81,6 +86,6 @@ export class PostScoreAsset extends BaseAsset {
 		}
 
 		await stateStore.account.set(account.address, account);
-		await stateStore.chain.set(LEADERBOARD_KEY, codec.encode(leaderboardModuleSchema, stateStoreData));
+		await stateStore.chain.set(LEADERBOARD_MODULE_KEY, codec.encode(leaderboardModuleSchema, stateStoreData));
 	}
 }

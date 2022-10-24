@@ -1,5 +1,6 @@
 import { BasePlugin, PluginInfo } from 'lisk-sdk';
 import type { BaseChannel, EventsDefinition, ActionsDefinition, SchemaWithDefault } from 'lisk-sdk';
+
 import * as actionHandlers from './action_handlers';
 
 /* eslint-disable  @typescript-eslint/no-empty-function */
@@ -29,10 +30,7 @@ export class TopasApiPlugin extends BasePlugin {
 	}
 
 	public get events(): EventsDefinition {
-		return [
-			// 'block:created',
-			// 'block:missed'
-		];
+		return [];
 	}
 
 	public get actions(): ActionsDefinition {
@@ -45,6 +43,14 @@ export class TopasApiPlugin extends BasePlugin {
 			getHighscores: async () => actionHandlers.getHighscores(this._channel),
 			getHighscoresByAppId: async params => actionHandlers.getHighscoresByAppId(this._channel, params),
 			getHighscoresByUserAddress: async params => actionHandlers.getHighscoresByUserAddress(this._channel, params),
+			getActiveMonsters: async () => actionHandlers.getActiveMonsters(this._channel),
+			getCards: async () => actionHandlers.getCards(this._channel),
+			getCardById: async params => actionHandlers.getCardById(this._channel, params),
+			getBasicCards: async () => actionHandlers.getBasicCards(this._channel),
+			getEliteCards: async () => actionHandlers.getEliteCards(this._channel),
+			getAvailableCards: async () => actionHandlers.getAvailableCards(this._channel),
+			getUnavailableCards: async () => actionHandlers.getUnavailableCards(this._channel),
+			getCardsByUserAddress: async params => actionHandlers.getCardsByUserAddress(this._channel, params),
 		};
 	}
 

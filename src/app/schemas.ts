@@ -48,15 +48,38 @@ export const accountEssentialsSchema = {
 
 export const topasAppEssentialsSchema = {
 	type: 'object',
-	required: ['id', 'title'],
+	required: ['appId', 'title'],
 	properties: {
-		id: {
+		appId: {
 			fieldNumber: 1,
 			dataType: 'string',
 		},
 		title: {
 			fieldNumber: 2,
 			dataType: 'string',
+		},
+	},
+};
+
+export const topasAppPurchaseSchema = {
+	type: 'object',
+	required: ['appId', 'purchaseId', 'title', 'createdAt'],
+	properties: {
+		appId: {
+			fieldNumber: 1,
+			dataType: 'string',
+		},
+		purchaseId: {
+			fieldNumber: 2,
+			dataType: 'string',
+		},
+		title: {
+			fieldNumber: 3,
+			dataType: 'string',
+		},
+		createdAt: {
+			fieldNumber: 4,
+			...dateTimeSchema,
 		},
 	},
 };
